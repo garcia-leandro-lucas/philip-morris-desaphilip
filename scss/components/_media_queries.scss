@@ -1,0 +1,467 @@
+// @import 'root';
+
+/*
+ * #######################
+ * #######################
+ * #######################
+ * Inicio de Media Queries
+ * #######################
+ * #######################
+ * #######################
+*/
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+    .display-none-mobile {
+        display: none;
+    }
+
+    .display-block-mobile {
+        display: block;
+    }
+
+    .menu-principal {
+
+        background-color: rgba(nth($colores, 2), 80%);
+
+        ul {
+            li {
+
+                &:hover ul {
+                    @include sizes-w(100%);
+                }
+
+                ul {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .login {
+            display: flex;
+            justify-content: inherit;
+
+            .login-avatar {
+                font-size: 1.875em; /* 30/16 */
+                margin-right: 1.25em; /* 20/16 */
+            }
+        }
+    }
+
+    .body-desaphilip {
+        .desaphilip {
+            .desaphilip-titulo-principal, .desaphilip-bajada, .option-text {
+                margin-right: .833332em;
+                margin-left: .833332em;
+            }
+
+            .option-content {
+                width: 100%;;
+
+                .btn-option {
+                    width: 15em;
+                }
+            }
+
+            .btn-option-image {
+                right: -45px;
+                top: 65px;
+
+                img {
+                    width: 60%;
+                }
+            }
+
+            .btn-option-icon {
+                left: 60px;
+                top: 80px;
+            }        
+        }
+
+        footer {
+           .footer-content {
+                width: 100%;
+                margin-top: 1.25em; /* 20/16 */
+
+                .btn-footer {
+                    width: 9em;
+
+                    .btn-footer-icono{
+                        width: 2.1em;
+                        height: 2.1em;
+
+                        img {
+                            width: 1.5em;
+                            padding: 0.1em;
+                        }
+                    }
+                }
+
+                .icono-sombrerero {
+                    margin: 0.5em;
+
+                    img {
+                        width: 2em;
+                    }
+                }
+
+                .btn-footer-text {
+                    padding-left: 0.9375em;
+                    font-size: 1rem;
+                }
+            } 
+        }
+    }
+
+
+    /*
+     * Inicio de index.html
+     *
+    */
+
+    .body-index {
+
+        section {
+            text-align: center;
+        }
+
+        #productos {
+            .ver-productos {
+                width: 12.5em; /* 200/16 */
+            }
+        }
+
+        #contacto {
+            background-color: var(--color-gris-opacidad);
+            background-image: url('../src/assets/images/background/background-general-mobile.jpg');
+
+            .form-contact {
+                @include sizes-w(100%);
+            }
+        }
+
+        footer {
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    padding-left: 0;
+
+                    li {
+                        margin: 0.625em; /* 10/16 */
+                        font-size: 1.1em;
+                        font-family: var(--fuente-roboto-medium);
+                    }
+                }
+            }
+
+            .copy {
+                padding: 1.875em; /* 30/16 */
+            }
+        }
+
+    }
+
+    /*
+     * Fin de index.html
+     *
+    */
+
+
+    /*
+     * Inicio de home.html
+     *
+    */
+
+    .body-desaphilip-home,
+    .body-galeria-de-stickers {
+        background-image: url('../src/assets/images/background/background-home-mobile.jpg');
+    }
+
+    .desaphilip-item-xs {
+        justify-content: center;
+    }
+
+    .body-desaphilip-home {
+        .instrucciones-desktop {
+            display: none;
+        }
+    }
+
+    /*
+     * Inicio de home.html
+     *
+    */
+
+
+    /*
+     * Inicio de musica.html
+     *
+     */
+
+    .body-desaphilip-musica,
+    .body-desaphilip-musica-2 {
+        background-image: url('../src/assets/images/background/background-musica-mobile.jpg');
+
+        .respuesta {
+            width: 100%;
+
+            .respuesta-content {
+                width: 90%;                
+            }
+        }
+
+    }
+
+
+
+    /*
+     * Fin de musica.html
+     *
+     */
+
+
+    /*
+     * Inicio de amistad.html
+     *
+    */
+
+    .body-desaphilip-amistad,
+    .body-desaphilip-amistad-2 {
+        background-image: url('../src/assets/images/background/background-amistad-mobile.jpg');
+    }
+
+
+    /*
+     * Fin de amistad.html
+     *
+    */
+
+
+    /*
+     * Inicio de diversion.html
+     *
+    */
+
+    .body-desaphilip-diversion,
+    .body-desaphilip-diversion-2 {
+        background-image: url('../src/assets/images/background/background-diversion-mobile.jpg');
+    }
+
+    /*
+     * Inicio de diversion.html
+     *
+    */
+
+
+    /*
+     * Inicio de autenticidad.html
+     *
+    */
+
+    .body-desaphilip-autenticidad,
+    .body-desaphilip-autenticidad-2 {
+        background-image: url('../src/assets/images/background/background-autenticidad-mobile.jpg');
+    }
+
+
+    /*
+     * Fin de autenticidad.html
+     *
+    */
+
+
+    /*
+     * Inicio de galeria_de_stickers.html
+     *
+    */
+
+    .body-galeria-de-stickers {
+        .galeria-de-stickers {
+            .carrousel-de-sticker {
+                width: 100%;
+            }
+        }
+    }
+
+
+    /*
+     * Fin de galeria_de_stickers.html
+     *
+    */
+
+}
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+    .display-none-tablet {
+        display: none;
+    }
+
+    .display-block-tablet {
+        display: block;
+    }
+
+    .menu-principal {
+        ul {
+            li {
+
+                &:hover ul {
+                    @include sizes-w(100%);
+                }
+            }
+        }
+    }
+
+    // .menu-principal ul li:hover ul {
+    //     width: 100%;
+    // }
+
+    /*
+     * Inicio de index.html
+     *
+    */
+
+
+    /*
+     * Fin de index.html
+     *
+    */
+
+
+    /*
+     * Inicio de home.html
+     *
+    */
+
+    .body-desaphilip-home,
+    .body-galeria-de-stickers {
+        background-image: url('../src/assets/images/background/background-home-mobile.jpg');
+    }
+
+    .desaphilip-item-xs {
+        justify-content: center;
+    }
+
+    /*
+     * Inicio de home.html
+     *
+    */
+
+
+
+    /*
+     * Inicio de musica.html
+     *
+     */
+
+    .body-desaphilip-musica,
+    .body-desaphilip-musica-2 {
+        background-image: url('../src/assets/images/background/background-musica-mobile.jpg');
+    }
+
+    /*
+     * Fin de musica.html
+     *
+     */
+
+
+    /*
+     * Inicio de amistad.html
+     *
+    */
+
+    .body-desaphilip-amistad,
+    .body-desaphilip-amistad-2 {
+        background-image: url('../src/assets/images/background/background-amistad-mobile.jpg');
+    }
+
+
+    /*
+     * Fin de amistad.html
+     *
+    */
+
+
+    /*
+     * Inicio de diversion.html
+     *
+    */
+
+    .body-desaphilip-diversion,
+    .body-desaphilip-diversion-2 {
+        background-image: url('../src/assets/images/background/background-diversion-mobile.jpg');
+    }
+
+    /*
+     * Inicio de diversion.html
+     *
+    */
+
+
+    /*
+     * Inicio de autenticidad.html
+     *
+    */
+
+    .body-desaphilip-autenticidad,
+    .body-desaphilip-autenticidad-2 {
+        background-image: url('../src/assets/images/background/background-autenticidad-mobile.jpg');
+    }
+
+
+    /*
+     * Fin de autenticidad.html
+     *
+    */
+
+
+
+
+
+}
+
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+    .display-none-desktop {
+        display: none;
+    }
+
+    .display-block-desktop {
+        display: block;
+    }
+
+
+    /*
+     * Inicio de index.html
+     *
+    */
+
+    /*
+     * Fin de index.html
+     *
+    */
+
+
+}
+
+/*
+ * #######################
+ * #######################
+ * #######################
+ *   Fin de Media Queries
+ * #######################
+ * #######################
+ * #######################
+*/

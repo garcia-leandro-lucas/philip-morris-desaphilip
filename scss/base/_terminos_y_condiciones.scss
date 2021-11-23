@@ -1,0 +1,22 @@
+// @import '../components/root';
+
+/*
+ * Inicio de terminos_y_condiciones.html
+ *
+*/
+
+.terminos-y-condiciones {
+    font-family: nth($fuentes, 1);
+    @include sizes-w(50%);
+    @include margin(1.875em auto); /* 30/16 */
+    text-align: justify;
+
+    h2 {
+        @include margin-t-b(1.875em, 0.625em); /* 30/16 */ /* 10/16 */
+    }
+}
+
+/*
+ * Fin de terminos_y_condiciones.html
+ *
+*/

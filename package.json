@@ -268,5 +268,13 @@
     "yargs": "^13.3.2",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garciaLeandroLucas/philip-morris-desaphilip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/garciaLeandroLucas/philip-morris-desaphilip/issues"
+  },
+  "homepage": "https://github.com/garciaLeandroLucas/philip-morris-desaphilip#readme",
   "description": ""
 }

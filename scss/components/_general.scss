@@ -33,11 +33,6 @@ li {
     list-style: none;
 }
 
-.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
-    padding-right: var(--bs-gutter-x, 0 rem) !important;
-    padding-left: var(--bs-gutter-x, 0 rem) !important;
-}
-
 .section-content {
     @include sizes-w(80%);
     margin: auto;
@@ -142,7 +137,8 @@ li {
 }
 
 .padding-30 {
-    padding: 1.875em; /* 30/16 */
+    padding: 1.875em;
+    /* 30/16 */
 }
 
 .top-40 {
@@ -557,40 +553,138 @@ nav {
     }
 }
 
+
+// footer {
+//     .footer-content {
+//         width: 100%;
+//         margin-top: 0.5em;
+
+//         .btn-footer {
+//             width: 9em;
+
+//             .btn-footer-icono {
+//                 width: 2.1em;
+//                 height: 2.1em;
+
+//                 img {
+//                     width: 1.5em;
+//                     padding: 0.1em;
+//                 }
+//             }
+//         }
+
+//         .icono-sombrerero {
+//             margin: 0.5em;
+
+//             img {
+//                 width: 2em;
+//             }
+//         }
+
+//         .btn-footer-text {
+//             padding-left: 0.9375em;
+//             font-size: 1rem;
+//         }
+//     }
+// }
+
+footer {
+    .modal-content {
+    border-radius: 30px;
+    position:relative;
+
+   i.fas.fa-caret-right {
+        position: absolute;
+        color: var(--color-rojo);
+        font-size: 60px;
+        bottom: -28px;
+        left: 0px;
+    }
+
+    i.fas.fa-caret-left {
+        position: absolute;
+        color: var(--color-violeta);
+        font-size: 60px;
+        bottom: -28px;
+        right: 0px;
+    }
+
+    .pop-up-footer {
+        border-radius: 20px;
+        padding: 20px;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 3rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+
+            input {
+                border-radius: 100px;
+                margin: 5px 0px;
+                padding: 6px;
+                text-align: center;
+            }
+
+            button {
+                width: 10em;
+                border-radius: 100px;
+                margin: 10px auto;
+                padding: 10px;
+            }
+        }
+    }
+}
+}
+
 .btn-footer {
     @include sizes-w(14em);
     display: flex;
     justify-content: space-between;
-    border-radius: 6.25em;/* 100/16 */
-    padding: 0.3125em;/* 5/16 */
+    border-radius: 6.25em;
+    /* 100/16 */
+    padding: 0.3125em;
+    /* 5/16 */
     align-items: center;
 
     .btn-footer-text {
-        padding-left: 0.9375em;/* 15/16 */
-        font-size: 1.3rem;/* 20.8 */
+        padding-left: 0.9375em;
+        /* 15/16 */
+        font-size: 1.3rem;
+        /* 20.8 */
     }
 
     .btn-footer-icono {
-        @include sizes-w-h(2.6875em,2.6875em);
+        @include sizes-w-h(2.6875em, 2.6875em);
         display: flex;
         justify-content: center;
-        border-radius: 6.25em;/* 100/16 */
+        border-radius: 6.25em;
+        /* 100/16 */
         align-content: center;
         align-items: center;
 
         img {
-            padding: 0.1875em;/* 3/16 */
+            padding: 0.1875em;
+            /* 3/16 */
         }
     }
 }
 
 .link-ver-terminos {
     p {
-       font-size: 12px;
+        font-size: 12px;
         text-align: center;
         margin: 10px;
-        text-decoration: underline; 
-    }    
+        text-decoration: underline;
+    }
 }
 
 .btn-footer.rojo:hover {
@@ -618,7 +712,7 @@ nav {
     padding: 0.962em;
     font-size: 1.3rem;
     @extend %btn;
-    
+
     &:hover {
         background-color: var(--color-gris-opacidad);
         transition: map-get($btn-footer-desaphilip, transition);
@@ -661,8 +755,10 @@ nav {
 
     .btn-option {
         @include sizes-w(35em);
-        padding: 0.5em;/* 8/16 */
-        border-radius: 6.25em;/* 100/16 */
+        padding: 0.5em;
+        /* 8/16 */
+        border-radius: 6.25em;
+        /* 100/16 */
     }
 
     .btn-option-icon {
@@ -677,7 +773,8 @@ nav {
     }
 
     .option-content-btn {
-        @include margin(1.25em auto);/* 20/16 */
+        @include margin(1.25em auto);
+        /* 20/16 */
         display: flex;
         justify-content: center;
         flex-direction: column;

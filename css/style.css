@@ -136,11 +136,6 @@ li {
   list-style: none;
 }
 
-.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
-  padding-right: var(--bs-gutter-x, 0 rem) !important;
-  padding-left: var(--bs-gutter-x, 0 rem) !important;
-}
-
 .section-content {
   width: 80%;
   margin: auto;
@@ -631,6 +626,53 @@ nav .star-puntos .star-puntos-icon i {
 .btn-continue-end:hover {
   background-color: var(--color-gris-opacidad);
   transition: all 0.5s;
+}
+
+footer .modal-content {
+  border-radius: 30px;
+  position: relative;
+}
+footer .modal-content i.fas.fa-caret-right {
+  position: absolute;
+  color: var(--color-rojo);
+  font-size: 60px;
+  bottom: -28px;
+  left: 0px;
+}
+footer .modal-content i.fas.fa-caret-left {
+  position: absolute;
+  color: var(--color-violeta);
+  font-size: 60px;
+  bottom: -28px;
+  right: 0px;
+}
+footer .modal-content .pop-up-footer {
+  border-radius: 20px;
+  padding: 20px;
+}
+footer .modal-content .pop-up-footer h3 {
+  font-size: 2rem;
+}
+footer .modal-content .pop-up-footer p {
+  font-size: 3rem;
+}
+footer .modal-content .pop-up-footer form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+footer .modal-content .pop-up-footer form input {
+  border-radius: 100px;
+  margin: 5px 0px;
+  padding: 6px;
+  text-align: center;
+}
+footer .modal-content .pop-up-footer form button {
+  width: 10em;
+  border-radius: 100px;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 .btn-footer {
@@ -1378,6 +1420,73 @@ nav .star-puntos .star-puntos-icon i {
 .body-desaphilip-autenticidad-2 footer .footer-content .btn-footer-text {
     padding-left: 0.9375em;
     font-size: 1rem;
+  }
+  .body-desaphilip .modal-content, .body-desaphilip-home .modal-content,
+.body-galeria-de-stickers .modal-content, .body-desaphilip-musica .modal-content,
+.body-desaphilip-musica-2 .modal-content, .body-desaphilip-amistad .modal-content,
+.body-desaphilip-amistad-2 .modal-content, .body-desaphilip-diversion .modal-content,
+.body-desaphilip-diversion-2 .modal-content, .body-desaphilip-autenticidad .modal-content,
+.body-desaphilip-autenticidad-2 .modal-content {
+    border-radius: 30px;
+    margin: 30px;
+  }
+  .body-desaphilip .modal-content .pop-up-footer, .body-desaphilip-home .modal-content .pop-up-footer,
+.body-galeria-de-stickers .modal-content .pop-up-footer, .body-desaphilip-musica .modal-content .pop-up-footer,
+.body-desaphilip-musica-2 .modal-content .pop-up-footer, .body-desaphilip-amistad .modal-content .pop-up-footer,
+.body-desaphilip-amistad-2 .modal-content .pop-up-footer, .body-desaphilip-diversion .modal-content .pop-up-footer,
+.body-desaphilip-diversion-2 .modal-content .pop-up-footer, .body-desaphilip-autenticidad .modal-content .pop-up-footer,
+.body-desaphilip-autenticidad-2 .modal-content .pop-up-footer {
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .body-desaphilip .modal-content .pop-up-footer h3, .body-desaphilip-home .modal-content .pop-up-footer h3,
+.body-galeria-de-stickers .modal-content .pop-up-footer h3, .body-desaphilip-musica .modal-content .pop-up-footer h3,
+.body-desaphilip-musica-2 .modal-content .pop-up-footer h3, .body-desaphilip-amistad .modal-content .pop-up-footer h3,
+.body-desaphilip-amistad-2 .modal-content .pop-up-footer h3, .body-desaphilip-diversion .modal-content .pop-up-footer h3,
+.body-desaphilip-diversion-2 .modal-content .pop-up-footer h3, .body-desaphilip-autenticidad .modal-content .pop-up-footer h3,
+.body-desaphilip-autenticidad-2 .modal-content .pop-up-footer h3 {
+    font-size: 2rem;
+  }
+  .body-desaphilip .modal-content .pop-up-footer p, .body-desaphilip-home .modal-content .pop-up-footer p,
+.body-galeria-de-stickers .modal-content .pop-up-footer p, .body-desaphilip-musica .modal-content .pop-up-footer p,
+.body-desaphilip-musica-2 .modal-content .pop-up-footer p, .body-desaphilip-amistad .modal-content .pop-up-footer p,
+.body-desaphilip-amistad-2 .modal-content .pop-up-footer p, .body-desaphilip-diversion .modal-content .pop-up-footer p,
+.body-desaphilip-diversion-2 .modal-content .pop-up-footer p, .body-desaphilip-autenticidad .modal-content .pop-up-footer p,
+.body-desaphilip-autenticidad-2 .modal-content .pop-up-footer p {
+    font-size: 3rem;
+  }
+  .body-desaphilip .modal-content .pop-up-footer form, .body-desaphilip-home .modal-content .pop-up-footer form,
+.body-galeria-de-stickers .modal-content .pop-up-footer form, .body-desaphilip-musica .modal-content .pop-up-footer form,
+.body-desaphilip-musica-2 .modal-content .pop-up-footer form, .body-desaphilip-amistad .modal-content .pop-up-footer form,
+.body-desaphilip-amistad-2 .modal-content .pop-up-footer form, .body-desaphilip-diversion .modal-content .pop-up-footer form,
+.body-desaphilip-diversion-2 .modal-content .pop-up-footer form, .body-desaphilip-autenticidad .modal-content .pop-up-footer form,
+.body-desaphilip-autenticidad-2 .modal-content .pop-up-footer form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+  .body-desaphilip .modal-content .pop-up-footer form input, .body-desaphilip-home .modal-content .pop-up-footer form input,
+.body-galeria-de-stickers .modal-content .pop-up-footer form input, .body-desaphilip-musica .modal-content .pop-up-footer form input,
+.body-desaphilip-musica-2 .modal-content .pop-up-footer form input, .body-desaphilip-amistad .modal-content .pop-up-footer form input,
+.body-desaphilip-amistad-2 .modal-content .pop-up-footer form input, .body-desaphilip-diversion .modal-content .pop-up-footer form input,
+.body-desaphilip-diversion-2 .modal-content .pop-up-footer form input, .body-desaphilip-autenticidad .modal-content .pop-up-footer form input,
+.body-desaphilip-autenticidad-2 .modal-content .pop-up-footer form input {
+    border-radius: 100px;
+    margin: 5px 0px;
+    padding: 6px;
+    text-align: center;
+  }
+  .body-desaphilip .modal-content .pop-up-footer form button, .body-desaphilip-home .modal-content .pop-up-footer form button,
+.body-galeria-de-stickers .modal-content .pop-up-footer form button, .body-desaphilip-musica .modal-content .pop-up-footer form button,
+.body-desaphilip-musica-2 .modal-content .pop-up-footer form button, .body-desaphilip-amistad .modal-content .pop-up-footer form button,
+.body-desaphilip-amistad-2 .modal-content .pop-up-footer form button, .body-desaphilip-diversion .modal-content .pop-up-footer form button,
+.body-desaphilip-diversion-2 .modal-content .pop-up-footer form button, .body-desaphilip-autenticidad .modal-content .pop-up-footer form button,
+.body-desaphilip-autenticidad-2 .modal-content .pop-up-footer form button {
+    width: 10em;
+    border-radius: 100px;
+    margin: 10px auto;
+    padding: 10px;
   }
 
   /*

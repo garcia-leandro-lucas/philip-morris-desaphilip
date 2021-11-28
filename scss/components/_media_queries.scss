@@ -53,9 +53,21 @@
 
     .body-desaphilip {
         .desaphilip {
+
+            margin-top: 6em;
+
             .desaphilip-titulo-principal, .desaphilip-bajada, .option-text {
                 margin-right: .833332em;
                 margin-left: .833332em;
+            }
+
+            .desaphilip-titulo-principal {
+                font-size: 3rem;
+            }
+
+            .desaphilip-bajada {
+                font-size: 2.5rem;
+                padding-bottom: 0.625em; /* 10/16 */
             }
 
             .option-content {
@@ -84,7 +96,7 @@
         footer {
            .footer-content {
                 width: 100%;
-                margin-top: 1.25em; /* 20/16 */
+                margin-top: 0.5em;
 
                 .btn-footer {
                     width: 9em;
@@ -183,13 +195,29 @@
         background-image: url('../src/assets/images/background/background-home-mobile.jpg');
     }
 
-    .desaphilip-item-xs {
+    .body-desaphilip-home .desaphilip-item-xs {
         justify-content: center;
     }
 
     .body-desaphilip-home {
         .instrucciones-desktop {
             display: none;
+        }
+
+        .desaphilip-item {
+            width: 16em;
+            padding: 0.2em;
+            margin: 0.3em auto;
+
+            .desaphilip-img {
+                width: 4.2em;
+            }
+
+            .desaphilip-text {
+                h2 {
+                    font-size: 2em;
+                }
+            }
         }
     }
 

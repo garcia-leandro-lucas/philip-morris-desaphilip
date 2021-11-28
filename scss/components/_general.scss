@@ -33,6 +33,11 @@ li {
     list-style: none;
 }
 
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    padding-right: var(--bs-gutter-x, 0 rem) !important;
+    padding-left: var(--bs-gutter-x, 0 rem) !important;
+}
+
 .section-content {
     @include sizes-w(80%);
     margin: auto;

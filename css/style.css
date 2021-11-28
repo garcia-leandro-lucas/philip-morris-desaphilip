@@ -136,6 +136,11 @@ li {
   list-style: none;
 }
 
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  padding-right: var(--bs-gutter-x, 0 rem) !important;
+  padding-left: var(--bs-gutter-x, 0 rem) !important;
+}
+
 .section-content {
   width: 80%;
   margin: auto;
@@ -1227,6 +1232,14 @@ nav .star-puntos .star-puntos-icon i {
     /* 20/16 */
   }
 
+  .body-desaphilip .desaphilip, .body-desaphilip-home .desaphilip,
+.body-galeria-de-stickers .desaphilip, .body-desaphilip-musica .desaphilip,
+.body-desaphilip-musica-2 .desaphilip, .body-desaphilip-amistad .desaphilip,
+.body-desaphilip-amistad-2 .desaphilip, .body-desaphilip-diversion .desaphilip,
+.body-desaphilip-diversion-2 .desaphilip, .body-desaphilip-autenticidad .desaphilip,
+.body-desaphilip-autenticidad-2 .desaphilip {
+    margin-top: 6em;
+  }
   .body-desaphilip .desaphilip .desaphilip-titulo-principal, .body-desaphilip-home .desaphilip .desaphilip-titulo-principal,
 .body-galeria-de-stickers .desaphilip .desaphilip-titulo-principal, .body-desaphilip-musica .desaphilip .desaphilip-titulo-principal,
 .body-desaphilip-musica-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-amistad .desaphilip .desaphilip-titulo-principal,
@@ -1245,6 +1258,24 @@ nav .star-puntos .star-puntos-icon i {
 .body-desaphilip-autenticidad-2 .desaphilip .option-text {
     margin-right: 0.833332em;
     margin-left: 0.833332em;
+  }
+  .body-desaphilip .desaphilip .desaphilip-titulo-principal, .body-desaphilip-home .desaphilip .desaphilip-titulo-principal,
+.body-galeria-de-stickers .desaphilip .desaphilip-titulo-principal, .body-desaphilip-musica .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-musica-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-amistad .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-amistad-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-diversion .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-diversion-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-autenticidad .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-autenticidad-2 .desaphilip .desaphilip-titulo-principal {
+    font-size: 3rem;
+  }
+  .body-desaphilip .desaphilip .desaphilip-bajada, .body-desaphilip-home .desaphilip .desaphilip-bajada,
+.body-galeria-de-stickers .desaphilip .desaphilip-bajada, .body-desaphilip-musica .desaphilip .desaphilip-bajada,
+.body-desaphilip-musica-2 .desaphilip .desaphilip-bajada, .body-desaphilip-amistad .desaphilip .desaphilip-bajada,
+.body-desaphilip-amistad-2 .desaphilip .desaphilip-bajada, .body-desaphilip-diversion .desaphilip .desaphilip-bajada,
+.body-desaphilip-diversion-2 .desaphilip .desaphilip-bajada, .body-desaphilip-autenticidad .desaphilip .desaphilip-bajada,
+.body-desaphilip-autenticidad-2 .desaphilip .desaphilip-bajada {
+    font-size: 2.5rem;
+    padding-bottom: 0.625em;
+    /* 10/16 */
   }
   .body-desaphilip .desaphilip .option-content, .body-desaphilip-home .desaphilip .option-content,
 .body-galeria-de-stickers .desaphilip .option-content, .body-desaphilip-musica .desaphilip .option-content,
@@ -1295,8 +1326,7 @@ nav .star-puntos .star-puntos-icon i {
 .body-desaphilip-diversion-2 footer .footer-content, .body-desaphilip-autenticidad footer .footer-content,
 .body-desaphilip-autenticidad-2 footer .footer-content {
     width: 100%;
-    margin-top: 1.25em;
-    /* 20/16 */
+    margin-top: 0.5em;
   }
   .body-desaphilip footer .footer-content .btn-footer, .body-desaphilip-home footer .footer-content .btn-footer,
 .body-galeria-de-stickers footer .footer-content .btn-footer, .body-desaphilip-musica footer .footer-content .btn-footer,
@@ -1399,12 +1429,23 @@ nav .star-puntos .star-puntos-icon i {
     background-image: url("../src/assets/images/background/background-home-mobile.jpg");
   }
 
-  .desaphilip-item-xs {
+  .body-desaphilip-home .desaphilip-item-xs {
     justify-content: center;
   }
 
   .body-desaphilip-home .instrucciones-desktop {
     display: none;
+  }
+  .body-desaphilip-home .desaphilip-item {
+    width: 16em;
+    padding: 0.2em;
+    margin: 0.3em auto;
+  }
+  .body-desaphilip-home .desaphilip-item .desaphilip-img {
+    width: 4.2em;
+  }
+  .body-desaphilip-home .desaphilip-item .desaphilip-text h2 {
+    font-size: 2em;
   }
 
   /*

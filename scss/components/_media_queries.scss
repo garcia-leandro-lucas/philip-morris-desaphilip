@@ -94,6 +94,7 @@
         }
 
         footer {
+
            .footer-content {
                 width: 100%;
                 margin-top: 0.5em;
@@ -126,48 +127,99 @@
                     padding-left: 0.9375em;
                     font-size: 1rem;
                 }
-            } 
+            }
+
+            #invitarAmigos {
+
+                .modal-content {
+                    border-radius: 30px;
+                    margin: 30px;
+
+                    .pop-up-footer {
+                        border-radius: 20px;
+                        padding: 20px;
+
+                        h3 {
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            font-size: 3rem;
+                        }
+
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            margin: auto;
+                            text-align: center;
+
+                            input {
+                                border-radius: 100px;
+                                margin: 5px 0px;
+                                padding: 6px;
+                                text-align: center;
+                            }
+
+                            button {
+                                width: 10em;
+                                border-radius: 100px;
+                                margin: 10px auto;
+                                padding: 10px;
+                            }
+                        }
+                    }
+            }
         }
 
-        .modal-content {
-            border-radius: 30px;
-            margin: 30px;
+        #descubrir {
 
-            .pop-up-footer {
-                border-radius: 20px;
-                padding: 20px;
+        .modal-dialog {
+            max-width: 570px;
 
-                h3 {
-                    font-size: 2rem;
+            .modal-content {
+                border-radius: 30px;
+                position: relative;
+
+                  i.fas.fa-caret-left {
+                    position: absolute;
+                    color: var(--color-violeta);
+                    font-size: 60px;
+                    bottom: -28px;
+                    right: 0px;
                 }
 
-                p {
-                    font-size: 3rem;
-                }
+                .pop-up-footer {
 
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    margin: auto;
-                    text-align: center;
+                    .slide-content {
 
-                    input {
-                        border-radius: 100px;
-                        margin: 5px 0px;
-                        padding: 6px;
-                        text-align: center;
-                    }
+                        .desafios-premios {
+                            border-radius: 15px;
 
-                    button {
-                        width: 10em;
-                        border-radius: 100px;
-                        margin: 10px auto;
-                        padding: 10px;
+                            .desafios-premios-content {
+                                display: flex;
+                                flex-direction: column;
+
+                                .desafios-premios-content-text {
+                                    width: 50%;
+                                    text-align: center;
+                                    margin: 10px;
+                                }
+
+                                .desafios-premios-content-image {
+                                    margin: 10px;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
+
+    }
+}
+
+
 
 
     /*

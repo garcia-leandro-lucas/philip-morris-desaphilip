@@ -5,19 +5,23 @@
  *
 */
 
-.terminos-y-condiciones {
-    font-family: nth($fuentes, 1);
-    text-align: justify;
+// .terminos-y-condiciones {
+//     font-family: nth($fuentes, 1);
+//     text-align: justify;
 
-    h5 {
-        font-size: 2rem;
-    }
+//     h5 {
+//         font-size: 2rem;
+//     }
 
-    h2 {
-        font-size: 1.5rem;
-        @include margin-t-b(1.875em, 0.625em); /* 30/16 */ /* 10/16 */
-    }
-}
+//     h2 {
+//         font-size: 1.5rem;
+//         @include margin-t-b(1.875em, 0.625em); /* 30/16 */ /* 10/16 */
+//     }
+
+//     .modal-body {
+//         padding:3rem;
+//     }
+// }
 
 /*
  * Fin de terminos_y_condiciones.html

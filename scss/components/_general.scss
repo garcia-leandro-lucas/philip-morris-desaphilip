@@ -190,6 +190,10 @@ li {
     color: var(--color-amarillo);
 }
 
+.texto-amarillo-medio {
+    color: var(--color-amarillo-medio);
+}
+
 .texto-amarillo-opacidad {
     color: var(--color-amarillo-opacidad);
 }
@@ -200,6 +204,10 @@ li {
 
 .texto-azul {
     color: var(--color-azul);
+}
+
+.texto-violeta {
+    color: var(--color-violeta);
 }
 
 .color-check {
@@ -392,6 +400,14 @@ li {
 
 .texto-bajada-desaphilip-3 {
     font-size: 3rem;
+}
+
+.texto-size-15 {
+    font-size: 0.9375em; /* 15/16 */
+}
+
+.texto-size-13-6 {
+    font-size: 0.85em; 
 }
 
 .texto-size-30 {
@@ -662,10 +678,22 @@ footer {
                                     width: 40%;
                                     text-align: left;
                                     margin: 20px;
+
+                                    svg {
+                                        width: 10rem;
+                                    }
                                 }
 
                                 .desafios-premios-content-image {
                                     margin: 20px;
+
+                                    .premio-completo {
+                                        width: 30rem;
+                                    }
+
+                                    img {
+                                        width: 15rem;
+                                    }
                                 }
                             }
                         }
@@ -699,6 +727,25 @@ footer {
             }
         }
     }
+
+    .terminos-y-condiciones {
+    font-family: nth($fuentes, 1);
+    text-align: justify;
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        @include margin-t-b(1.875em, 0.625em); /* 30/16 */ /* 10/16 */
+    }
+
+    .modal-body {
+        padding:3rem;
+    }
+}
+
 }
 
 

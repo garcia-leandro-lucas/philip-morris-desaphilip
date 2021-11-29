@@ -171,7 +171,7 @@
             }
         }
 
-        #descubrir {
+    #descubrir {
 
         .modal-dialog {
             max-width: 570px;
@@ -203,10 +203,18 @@
                                     width: 50%;
                                     text-align: center;
                                     margin: 10px;
+
+                                    svg {
+                                        width: 10rem;
+                                    }
                                 }
 
                                 .desafios-premios-content-image {
                                     margin: 10px;
+
+                                    img {
+                                        width: 15rem;
+                                    }
                                 }
                             }
                         }

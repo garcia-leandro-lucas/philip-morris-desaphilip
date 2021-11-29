@@ -46,6 +46,7 @@
   scroll-behavior: smooth;
   /*  Medidas  */
   --medida-raiz: 62.5%;
+  --swiper-navigation-size: 20px;
   /*  Fin de Medidas  */
   /* Colores */
   --color-blanco: #ffffff;
@@ -157,6 +158,10 @@ li {
   line-height: 0.8;
 }
 
+.line-height-1 {
+  line-height: 1;
+}
+
 .ancho-1 {
   width: 1em;
 }
@@ -186,6 +191,13 @@ li {
   /* 40/16 */
   margin-bottom: 2.5em;
   /* 40/16 */
+}
+
+.margin-t-b-10 {
+  margin-top: 0.625em;
+  /* 10/16 */
+  margin-bottom: 0.625em;
+  /* 10/16 */
 }
 
 .margin-40-auto {
@@ -501,6 +513,10 @@ li {
   /* 13/16 */
 }
 
+.texto-size-16 {
+  font-size: 16px;
+}
+
 .text-pregunta-desaphilip-2-6 {
   font-size: 2.6rem;
 }
@@ -628,51 +644,107 @@ nav .star-puntos .star-puntos-icon i {
   transition: all 0.5s;
 }
 
-footer .modal-content {
+footer #invitarAmigos .modal-dialog {
+  max-width: 570px;
+}
+footer #invitarAmigos .modal-dialog .modal-content {
   border-radius: 30px;
   position: relative;
 }
-footer .modal-content i.fas.fa-caret-right {
+footer #invitarAmigos .modal-dialog .modal-content i.fas.fa-caret-right {
   position: absolute;
   color: var(--color-rojo);
   font-size: 60px;
   bottom: -28px;
   left: 0px;
 }
-footer .modal-content i.fas.fa-caret-left {
+footer #invitarAmigos .modal-dialog .modal-content .pop-up-footer {
+  border-radius: 20px;
+  padding: 20px;
+}
+footer #invitarAmigos .modal-dialog .modal-content .pop-up-footer h3 {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+footer #invitarAmigos .modal-dialog .modal-content .pop-up-footer p {
+  font-size: 4rem;
+}
+footer #invitarAmigos .modal-dialog .modal-content .pop-up-footer form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+footer #invitarAmigos .modal-dialog .modal-content .pop-up-footer form input {
+  border-radius: 100px;
+  margin: 5px 0px;
+  padding: 10px;
+  text-align: center;
+}
+footer #invitarAmigos .modal-dialog .modal-content .pop-up-footer form button {
+  width: 10em;
+  border-radius: 100px;
+  margin: 10px auto;
+  padding: 10px;
+}
+footer #descubrir .modal-dialog {
+  max-width: 570px;
+}
+footer #descubrir .modal-dialog .modal-content {
+  border-radius: 30px;
+  position: relative;
+}
+footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left {
   position: absolute;
   color: var(--color-violeta);
   font-size: 60px;
   bottom: -28px;
   right: 0px;
 }
-footer .modal-content .pop-up-footer {
-  border-radius: 20px;
-  padding: 20px;
+footer #descubrir .modal-dialog .modal-content .pop-up-footer {
+  border-radius: 10px;
 }
-footer .modal-content .pop-up-footer h3 {
-  font-size: 2rem;
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content {
+  padding: 21px;
+  border-radius: 10px;
 }
-footer .modal-content .pop-up-footer p {
-  font-size: 3rem;
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios {
+  border-radius: 15px;
 }
-footer .modal-content .pop-up-footer form {
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content {
   display: flex;
-  flex-direction: column;
-  margin: auto;
-  text-align: center;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
 }
-footer .modal-content .pop-up-footer form input {
-  border-radius: 100px;
-  margin: 5px 0px;
-  padding: 6px;
-  text-align: center;
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text {
+  width: 40%;
+  text-align: left;
+  margin: 20px;
 }
-footer .modal-content .pop-up-footer form button {
-  width: 10em;
-  border-radius: 100px;
-  margin: 10px auto;
-  padding: 10px;
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image {
+  margin: 20px;
+}
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .swiper-button-next,
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .swiper-button-prev {
+  position: absolute;
+  top: 60%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-negro);
+}
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .swiper-button-next,
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .swiper-rtl .swiper-button-prev {
+  right: 40px;
+  left: auto;
+}
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .swiper-button-prev,
+footer #descubrir .modal-dialog .modal-content .pop-up-footer .swiper-rtl .swiper-button-next {
+  left: 40px;
+  right: auto;
 }
 
 .btn-footer {
@@ -737,6 +809,9 @@ footer .modal-content .pop-up-footer form button {
   width: 9em;
   padding: 0.962em;
   font-size: 1.3rem;
+  position: absolute;
+  top: 39px;
+  right: 0;
 }
 .btn-ver-terminos:hover {
   background-color: var(--color-gris-opacidad);
@@ -963,7 +1038,9 @@ footer .modal-content .pop-up-footer form button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 100px;
   position: relative;
+  margin-left: 100px;
 }
 
 .icono-sombrerero {
@@ -1219,12 +1296,13 @@ footer .modal-content .pop-up-footer form button {
 */
 .terminos-y-condiciones {
   font-family: Roboto;
-  width: 50%;
-  margin: 1.875em auto;
-  /* 30/16 */
   text-align: justify;
 }
+.terminos-y-condiciones h5 {
+  font-size: 2rem;
+}
 .terminos-y-condiciones h2 {
+  font-size: 1.5rem;
   margin-top: 1.875em;
   margin-bottom: 0.625em;
   /* 30/16 */
@@ -1369,6 +1447,8 @@ footer .modal-content .pop-up-footer form button {
 .body-desaphilip-autenticidad-2 footer .footer-content {
     width: 100%;
     margin-top: 0.5em;
+    margin-right: 0px;
+    margin-left: 0px;
   }
   .body-desaphilip footer .footer-content .btn-footer, .body-desaphilip-home footer .footer-content .btn-footer,
 .body-galeria-de-stickers footer .footer-content .btn-footer, .body-desaphilip-musica footer .footer-content .btn-footer,

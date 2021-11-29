@@ -54,6 +54,10 @@ li {
     line-height: .8;
 }
 
+.line-height-1 {
+    line-height: 1;
+}
+
 .ancho-1 {
     @include sizes-w(1em);
 }
@@ -83,6 +87,11 @@ li {
     /* 40/16 */
     margin-bottom: 2.5em;
     /* 40/16 */
+}
+
+.margin-t-b-10 {
+    margin-top: 0.625em; /* 10/16 */
+    margin-bottom: 0.625em; /* 10/16 */
 }
 
 .margin-40-auto {
@@ -398,6 +407,10 @@ li {
     /* 13/16 */
 }
 
+.texto-size-16 {
+    font-size: 16px;
+}
+
 .text-pregunta-desaphilip-2-6 {
     font-size: 2.6rem;
 }
@@ -553,97 +566,146 @@ nav {
     }
 }
 
-
-// footer {
-//     .footer-content {
-//         width: 100%;
-//         margin-top: 0.5em;
-
-//         .btn-footer {
-//             width: 9em;
-
-//             .btn-footer-icono {
-//                 width: 2.1em;
-//                 height: 2.1em;
-
-//                 img {
-//                     width: 1.5em;
-//                     padding: 0.1em;
-//                 }
-//             }
-//         }
-
-//         .icono-sombrerero {
-//             margin: 0.5em;
-
-//             img {
-//                 width: 2em;
-//             }
-//         }
-
-//         .btn-footer-text {
-//             padding-left: 0.9375em;
-//             font-size: 1rem;
-//         }
-//     }
-// }
-
 footer {
-    .modal-content {
-    border-radius: 30px;
-    position:relative;
 
-   i.fas.fa-caret-right {
-        position: absolute;
-        color: var(--color-rojo);
-        font-size: 60px;
-        bottom: -28px;
-        left: 0px;
-    }
+    #invitarAmigos {
 
-    i.fas.fa-caret-left {
-        position: absolute;
-        color: var(--color-violeta);
-        font-size: 60px;
-        bottom: -28px;
-        right: 0px;
-    }
+        .modal-dialog {
+            max-width: 570px;
 
-    .pop-up-footer {
-        border-radius: 20px;
-        padding: 20px;
+            .modal-content {
+                border-radius: 30px;
+                position: relative;
 
-        h3 {
-            font-size: 2rem;
-        }
+                i.fas.fa-caret-right {
+                    position: absolute;
+                    color: var(--color-rojo);
+                    font-size: 60px;
+                    bottom: -28px;
+                    left: 0px;
+                }
 
-        p {
-            font-size: 3rem;
-        }
+                .pop-up-footer {
+                    border-radius: 20px;
+                    padding: 20px;
 
-        form {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            text-align: center;
+                    h3 {
+                        font-size: 3.5rem;
+                        line-height: 1;
 
-            input {
-                border-radius: 100px;
-                margin: 5px 0px;
-                padding: 6px;
-                text-align: center;
+                    }
+
+                    p {
+                        font-size: 4rem;
+                    }
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        margin: auto;
+                        text-align: center;
+
+                        input {
+                            border-radius: 100px;
+                            margin: 5px 0px;
+                            padding: 10px;
+                            text-align: center;
+                        }
+
+                        button {
+                            width: 10em;
+                            border-radius: 100px;
+                            margin: 10px auto;
+                            padding: 10px;
+                        }
+                    }
+                }
             }
+        }
 
-            button {
-                width: 10em;
-                border-radius: 100px;
-                margin: 10px auto;
-                padding: 10px;
+    }
+
+    #descubrir {
+
+        .modal-dialog {
+            max-width: 570px;
+
+            .modal-content {
+                border-radius: 30px;
+                position: relative;
+
+                  i.fas.fa-caret-left {
+                    position: absolute;
+                    color: var(--color-violeta);
+                    font-size: 60px;
+                    bottom: -28px;
+                    right: 0px;
+                }
+
+                .pop-up-footer {
+                    border-radius: 10px;
+
+                    .slide-content {
+                        padding: 21px;
+                        border-radius: 10px;
+
+                            .desafios-premios {
+                            border-radius: 15px;
+
+                            .desafios-premios-content {
+                                display: flex;
+                                justify-content: center;
+                                width: 100%;
+                                align-items: center;
+
+                                .desafios-premios-content-text {
+                                    width: 40%;
+                                    text-align: left;
+                                    margin: 20px;
+                                }
+
+                                .desafios-premios-content-image {
+                                    margin: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        position: absolute;
+                        top: 60%;
+                        z-index: 10;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color:var(--color-negro);
+                    }
+
+                    .swiper-button-next,
+                    .swiper-rtl .swiper-button-prev {
+                        right: 40px;
+                        left: auto;
+                    }
+
+                    .swiper-button-prev,
+                    .swiper-rtl .swiper-button-next {
+                        left: 40px;
+                        right: auto;
+                    }
+
+                }
             }
         }
     }
 }
-}
+
+
+
+
+
+
 
 .btn-footer {
     @include sizes-w(14em);
@@ -711,6 +773,9 @@ footer {
     @include sizes-w(9em);
     padding: 0.962em;
     font-size: 1.3rem;
+    position: absolute;
+    top: 39px;
+    right: 0;
     @extend %btn;
 
     &:hover {

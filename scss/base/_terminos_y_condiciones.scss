@@ -7,11 +7,14 @@
 
 .terminos-y-condiciones {
     font-family: nth($fuentes, 1);
-    @include sizes-w(50%);
-    @include margin(1.875em auto); /* 30/16 */
     text-align: justify;
 
+    h5 {
+        font-size: 2rem;
+    }
+
     h2 {
+        font-size: 1.5rem;
         @include margin-t-b(1.875em, 0.625em); /* 30/16 */ /* 10/16 */
     }
 }

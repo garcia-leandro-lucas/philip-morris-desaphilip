@@ -1178,15 +1178,51 @@ footer .terminos-y-condiciones .modal-body {
 }
 .body-desaphilip-home .musica {
   box-shadow: inset 0em 0em 2em 0.3em var(--color-rojo), inset 0em 0em 1em 0.2em var(--color-rojo), inset 0em 0em 0.5em 0.1em var(--color-rojo), 0em 0em 2em 0.3em var(--color-rojo), 0em 0em 1em 0.2em var(--color-rojo), 0em 0em 0.5em 0.1em var(--color-rojo);
+  animation: neon-musica 1.5s infinite alternate;
+}
+@keyframes neon-musica {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    box-shadow: inset 0em 0em 2em 0.3em var(--color-rojo), inset 0em 0em 1em 0.2em var(--color-rojo), inset 0em 0em 0.5em 0.1em var(--color-rojo), 0em 0em 2em 0.3em var(--color-rojo), 0em 0em 1em 0.2em var(--color-rojo), 0em 0em 0.5em 0.1em var(--color-rojo);
+  }
+  20%, 24%, 55% {
+    box-shadow: none;
+  }
 }
 .body-desaphilip-home .amistad {
   box-shadow: inset 0em 0em 2em 0.3em var(--color-fucsia), 0em 0em 2em 0.3em var(--color-fucsia);
+  animation: neon-amistad 1.5s infinite alternate;
+}
+@keyframes neon-amistad {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    box-shadow: inset 0em 0em 2em 0.3em var(--color-fucsia), 0em 0em 2em 0.3em var(--color-fucsia);
+  }
+  30%, 34%, 65% {
+    box-shadow: none;
+  }
 }
 .body-desaphilip-home .diversion {
   box-shadow: inset 0em 0em 2em 0.3em var(--color-azul), 0em 0em 2em 0.3em var(--color-azul);
+  animation: neon-diversion 1.5s infinite alternate;
+}
+@keyframes neon-diversion {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    box-shadow: inset 0em 0em 2em 0.3em var(--color-azul), 0em 0em 2em 0.3em var(--color-azul);
+  }
+  30%, 34%, 65% {
+    box-shadow: none;
+  }
 }
 .body-desaphilip-home .autenticidad {
   box-shadow: inset 0em 0em 2em 0.3em var(--color-amarillo), 0em 0em 2em 0.3em var(--color-amarillo);
+  animation: neon-autenticidad 1.5s infinite alternate;
+}
+@keyframes neon-autenticidad {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    box-shadow: inset 0em 0em 2em 0.3em var(--color-amarillo), 0em 0em 2em 0.3em var(--color-amarillo);
+  }
+  25%, 29%, 59% {
+    box-shadow: none;
+  }
 }
 
 /*
@@ -1604,6 +1640,7 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-diversion-2 footer #descubrir .modal-dialog, .body-desaphilip-autenticidad footer #descubrir .modal-dialog,
 .body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog {
     max-width: 570px;
+    margin: 3rem;
   }
   .body-desaphilip footer #descubrir .modal-dialog .modal-content, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content,
 .body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content,
@@ -1625,6 +1662,15 @@ footer .terminos-y-condiciones .modal-body {
     font-size: 60px;
     bottom: -28px;
     right: 0px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4 {
+    font-size: 2rem;
+    margin: 0px;
   }
   .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios,
 .body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios,
@@ -1649,9 +1695,18 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text,
 .body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text,
 .body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text {
-    width: 50%;
+    width: 70%;
     text-align: center;
     margin: 10px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5 {
+    font-size: 2.24rem;
+    margin: 0px;
   }
   .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg,
 .body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg,
@@ -1659,7 +1714,17 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg,
 .body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg,
 .body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg {
-    width: 10rem;
+    width: 6rem;
+    margin: 0px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p {
+    font-size: 0.9375em;
+    /* 15/16 */
   }
   .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image,
 .body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image,
@@ -1675,6 +1740,14 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img,
 .body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img,
 .body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img {
+    width: 10rem;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo {
     width: 15rem;
   }
 
@@ -1824,7 +1897,7 @@ footer .terminos-y-condiciones .modal-body {
   */
 }
 /* Tablet Styles */
-@media only screen and (min-width: 361px) and (max-width: 960px) {
+@media only screen and (min-width: 361px) and (max-width: 1060px) {
   .display-none-tablet {
     display: none;
   }
@@ -1835,6 +1908,340 @@ footer .terminos-y-condiciones .modal-body {
 
   .menu-principal ul li:hover ul {
     width: 100%;
+  }
+
+  .body-desaphilip .desaphilip, .body-desaphilip-home .desaphilip,
+.body-galeria-de-stickers .desaphilip, .body-desaphilip-musica .desaphilip,
+.body-desaphilip-musica-2 .desaphilip, .body-desaphilip-amistad .desaphilip,
+.body-desaphilip-amistad-2 .desaphilip, .body-desaphilip-diversion .desaphilip,
+.body-desaphilip-diversion-2 .desaphilip, .body-desaphilip-autenticidad .desaphilip,
+.body-desaphilip-autenticidad-2 .desaphilip {
+    margin-top: 6em;
+  }
+  .body-desaphilip .desaphilip .desaphilip-titulo-principal, .body-desaphilip-home .desaphilip .desaphilip-titulo-principal,
+.body-galeria-de-stickers .desaphilip .desaphilip-titulo-principal, .body-desaphilip-musica .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-musica-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-amistad .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-amistad-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-diversion .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-diversion-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-autenticidad .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-autenticidad-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip .desaphilip .desaphilip-bajada, .body-desaphilip-home .desaphilip .desaphilip-bajada,
+.body-galeria-de-stickers .desaphilip .desaphilip-bajada, .body-desaphilip-musica .desaphilip .desaphilip-bajada,
+.body-desaphilip-musica-2 .desaphilip .desaphilip-bajada, .body-desaphilip-amistad .desaphilip .desaphilip-bajada,
+.body-desaphilip-amistad-2 .desaphilip .desaphilip-bajada, .body-desaphilip-diversion .desaphilip .desaphilip-bajada,
+.body-desaphilip-diversion-2 .desaphilip .desaphilip-bajada, .body-desaphilip-autenticidad .desaphilip .desaphilip-bajada,
+.body-desaphilip-autenticidad-2 .desaphilip .desaphilip-bajada, .body-desaphilip .desaphilip .option-text, .body-desaphilip-home .desaphilip .option-text,
+.body-galeria-de-stickers .desaphilip .option-text, .body-desaphilip-musica .desaphilip .option-text,
+.body-desaphilip-musica-2 .desaphilip .option-text, .body-desaphilip-amistad .desaphilip .option-text,
+.body-desaphilip-amistad-2 .desaphilip .option-text, .body-desaphilip-diversion .desaphilip .option-text,
+.body-desaphilip-diversion-2 .desaphilip .option-text, .body-desaphilip-autenticidad .desaphilip .option-text,
+.body-desaphilip-autenticidad-2 .desaphilip .option-text {
+    margin-right: 0.833332em;
+    margin-left: 0.833332em;
+  }
+  .body-desaphilip .desaphilip .desaphilip-titulo-principal, .body-desaphilip-home .desaphilip .desaphilip-titulo-principal,
+.body-galeria-de-stickers .desaphilip .desaphilip-titulo-principal, .body-desaphilip-musica .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-musica-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-amistad .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-amistad-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-diversion .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-diversion-2 .desaphilip .desaphilip-titulo-principal, .body-desaphilip-autenticidad .desaphilip .desaphilip-titulo-principal,
+.body-desaphilip-autenticidad-2 .desaphilip .desaphilip-titulo-principal {
+    font-size: 3rem;
+  }
+  .body-desaphilip .desaphilip .desaphilip-bajada, .body-desaphilip-home .desaphilip .desaphilip-bajada,
+.body-galeria-de-stickers .desaphilip .desaphilip-bajada, .body-desaphilip-musica .desaphilip .desaphilip-bajada,
+.body-desaphilip-musica-2 .desaphilip .desaphilip-bajada, .body-desaphilip-amistad .desaphilip .desaphilip-bajada,
+.body-desaphilip-amistad-2 .desaphilip .desaphilip-bajada, .body-desaphilip-diversion .desaphilip .desaphilip-bajada,
+.body-desaphilip-diversion-2 .desaphilip .desaphilip-bajada, .body-desaphilip-autenticidad .desaphilip .desaphilip-bajada,
+.body-desaphilip-autenticidad-2 .desaphilip .desaphilip-bajada {
+    font-size: 2.5rem;
+    padding-bottom: 0.625em;
+    /* 10/16 */
+  }
+  .body-desaphilip .desaphilip .option-content, .body-desaphilip-home .desaphilip .option-content,
+.body-galeria-de-stickers .desaphilip .option-content, .body-desaphilip-musica .desaphilip .option-content,
+.body-desaphilip-musica-2 .desaphilip .option-content, .body-desaphilip-amistad .desaphilip .option-content,
+.body-desaphilip-amistad-2 .desaphilip .option-content, .body-desaphilip-diversion .desaphilip .option-content,
+.body-desaphilip-diversion-2 .desaphilip .option-content, .body-desaphilip-autenticidad .desaphilip .option-content,
+.body-desaphilip-autenticidad-2 .desaphilip .option-content {
+    width: 100%;
+  }
+  .body-desaphilip .desaphilip .option-content .btn-option, .body-desaphilip-home .desaphilip .option-content .btn-option,
+.body-galeria-de-stickers .desaphilip .option-content .btn-option, .body-desaphilip-musica .desaphilip .option-content .btn-option,
+.body-desaphilip-musica-2 .desaphilip .option-content .btn-option, .body-desaphilip-amistad .desaphilip .option-content .btn-option,
+.body-desaphilip-amistad-2 .desaphilip .option-content .btn-option, .body-desaphilip-diversion .desaphilip .option-content .btn-option,
+.body-desaphilip-diversion-2 .desaphilip .option-content .btn-option, .body-desaphilip-autenticidad .desaphilip .option-content .btn-option,
+.body-desaphilip-autenticidad-2 .desaphilip .option-content .btn-option {
+    width: 15em;
+  }
+  .body-desaphilip .desaphilip .btn-option-image, .body-desaphilip-home .desaphilip .btn-option-image,
+.body-galeria-de-stickers .desaphilip .btn-option-image, .body-desaphilip-musica .desaphilip .btn-option-image,
+.body-desaphilip-musica-2 .desaphilip .btn-option-image, .body-desaphilip-amistad .desaphilip .btn-option-image,
+.body-desaphilip-amistad-2 .desaphilip .btn-option-image, .body-desaphilip-diversion .desaphilip .btn-option-image,
+.body-desaphilip-diversion-2 .desaphilip .btn-option-image, .body-desaphilip-autenticidad .desaphilip .btn-option-image,
+.body-desaphilip-autenticidad-2 .desaphilip .btn-option-image {
+    right: -45px;
+    top: 65px;
+  }
+  .body-desaphilip .desaphilip .btn-option-image img, .body-desaphilip-home .desaphilip .btn-option-image img,
+.body-galeria-de-stickers .desaphilip .btn-option-image img, .body-desaphilip-musica .desaphilip .btn-option-image img,
+.body-desaphilip-musica-2 .desaphilip .btn-option-image img, .body-desaphilip-amistad .desaphilip .btn-option-image img,
+.body-desaphilip-amistad-2 .desaphilip .btn-option-image img, .body-desaphilip-diversion .desaphilip .btn-option-image img,
+.body-desaphilip-diversion-2 .desaphilip .btn-option-image img, .body-desaphilip-autenticidad .desaphilip .btn-option-image img,
+.body-desaphilip-autenticidad-2 .desaphilip .btn-option-image img {
+    width: 60%;
+  }
+  .body-desaphilip .desaphilip .btn-option-icon, .body-desaphilip-home .desaphilip .btn-option-icon,
+.body-galeria-de-stickers .desaphilip .btn-option-icon, .body-desaphilip-musica .desaphilip .btn-option-icon,
+.body-desaphilip-musica-2 .desaphilip .btn-option-icon, .body-desaphilip-amistad .desaphilip .btn-option-icon,
+.body-desaphilip-amistad-2 .desaphilip .btn-option-icon, .body-desaphilip-diversion .desaphilip .btn-option-icon,
+.body-desaphilip-diversion-2 .desaphilip .btn-option-icon, .body-desaphilip-autenticidad .desaphilip .btn-option-icon,
+.body-desaphilip-autenticidad-2 .desaphilip .btn-option-icon {
+    left: 60px;
+    top: 80px;
+  }
+  .body-desaphilip footer .footer-content, .body-desaphilip-home footer .footer-content,
+.body-galeria-de-stickers footer .footer-content, .body-desaphilip-musica footer .footer-content,
+.body-desaphilip-musica-2 footer .footer-content, .body-desaphilip-amistad footer .footer-content,
+.body-desaphilip-amistad-2 footer .footer-content, .body-desaphilip-diversion footer .footer-content,
+.body-desaphilip-diversion-2 footer .footer-content, .body-desaphilip-autenticidad footer .footer-content,
+.body-desaphilip-autenticidad-2 footer .footer-content {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .body-desaphilip footer .footer-content .btn-footer, .body-desaphilip-home footer .footer-content .btn-footer,
+.body-galeria-de-stickers footer .footer-content .btn-footer, .body-desaphilip-musica footer .footer-content .btn-footer,
+.body-desaphilip-musica-2 footer .footer-content .btn-footer, .body-desaphilip-amistad footer .footer-content .btn-footer,
+.body-desaphilip-amistad-2 footer .footer-content .btn-footer, .body-desaphilip-diversion footer .footer-content .btn-footer,
+.body-desaphilip-diversion-2 footer .footer-content .btn-footer, .body-desaphilip-autenticidad footer .footer-content .btn-footer,
+.body-desaphilip-autenticidad-2 footer .footer-content .btn-footer {
+    width: 9em;
+  }
+  .body-desaphilip footer .footer-content .btn-footer .btn-footer-icono, .body-desaphilip-home footer .footer-content .btn-footer .btn-footer-icono,
+.body-galeria-de-stickers footer .footer-content .btn-footer .btn-footer-icono, .body-desaphilip-musica footer .footer-content .btn-footer .btn-footer-icono,
+.body-desaphilip-musica-2 footer .footer-content .btn-footer .btn-footer-icono, .body-desaphilip-amistad footer .footer-content .btn-footer .btn-footer-icono,
+.body-desaphilip-amistad-2 footer .footer-content .btn-footer .btn-footer-icono, .body-desaphilip-diversion footer .footer-content .btn-footer .btn-footer-icono,
+.body-desaphilip-diversion-2 footer .footer-content .btn-footer .btn-footer-icono, .body-desaphilip-autenticidad footer .footer-content .btn-footer .btn-footer-icono,
+.body-desaphilip-autenticidad-2 footer .footer-content .btn-footer .btn-footer-icono {
+    width: 2.1em;
+    height: 2.1em;
+  }
+  .body-desaphilip footer .footer-content .btn-footer .btn-footer-icono img, .body-desaphilip-home footer .footer-content .btn-footer .btn-footer-icono img,
+.body-galeria-de-stickers footer .footer-content .btn-footer .btn-footer-icono img, .body-desaphilip-musica footer .footer-content .btn-footer .btn-footer-icono img,
+.body-desaphilip-musica-2 footer .footer-content .btn-footer .btn-footer-icono img, .body-desaphilip-amistad footer .footer-content .btn-footer .btn-footer-icono img,
+.body-desaphilip-amistad-2 footer .footer-content .btn-footer .btn-footer-icono img, .body-desaphilip-diversion footer .footer-content .btn-footer .btn-footer-icono img,
+.body-desaphilip-diversion-2 footer .footer-content .btn-footer .btn-footer-icono img, .body-desaphilip-autenticidad footer .footer-content .btn-footer .btn-footer-icono img,
+.body-desaphilip-autenticidad-2 footer .footer-content .btn-footer .btn-footer-icono img {
+    width: 1.5em;
+    padding: 0.1em;
+  }
+  .body-desaphilip footer .footer-content .icono-sombrerero, .body-desaphilip-home footer .footer-content .icono-sombrerero,
+.body-galeria-de-stickers footer .footer-content .icono-sombrerero, .body-desaphilip-musica footer .footer-content .icono-sombrerero,
+.body-desaphilip-musica-2 footer .footer-content .icono-sombrerero, .body-desaphilip-amistad footer .footer-content .icono-sombrerero,
+.body-desaphilip-amistad-2 footer .footer-content .icono-sombrerero, .body-desaphilip-diversion footer .footer-content .icono-sombrerero,
+.body-desaphilip-diversion-2 footer .footer-content .icono-sombrerero, .body-desaphilip-autenticidad footer .footer-content .icono-sombrerero,
+.body-desaphilip-autenticidad-2 footer .footer-content .icono-sombrerero {
+    margin: 0.5em;
+  }
+  .body-desaphilip footer .footer-content .icono-sombrerero img, .body-desaphilip-home footer .footer-content .icono-sombrerero img,
+.body-galeria-de-stickers footer .footer-content .icono-sombrerero img, .body-desaphilip-musica footer .footer-content .icono-sombrerero img,
+.body-desaphilip-musica-2 footer .footer-content .icono-sombrerero img, .body-desaphilip-amistad footer .footer-content .icono-sombrerero img,
+.body-desaphilip-amistad-2 footer .footer-content .icono-sombrerero img, .body-desaphilip-diversion footer .footer-content .icono-sombrerero img,
+.body-desaphilip-diversion-2 footer .footer-content .icono-sombrerero img, .body-desaphilip-autenticidad footer .footer-content .icono-sombrerero img,
+.body-desaphilip-autenticidad-2 footer .footer-content .icono-sombrerero img {
+    width: 2em;
+  }
+  .body-desaphilip footer .footer-content .btn-footer-text, .body-desaphilip-home footer .footer-content .btn-footer-text,
+.body-galeria-de-stickers footer .footer-content .btn-footer-text, .body-desaphilip-musica footer .footer-content .btn-footer-text,
+.body-desaphilip-musica-2 footer .footer-content .btn-footer-text, .body-desaphilip-amistad footer .footer-content .btn-footer-text,
+.body-desaphilip-amistad-2 footer .footer-content .btn-footer-text, .body-desaphilip-diversion footer .footer-content .btn-footer-text,
+.body-desaphilip-diversion-2 footer .footer-content .btn-footer-text, .body-desaphilip-autenticidad footer .footer-content .btn-footer-text,
+.body-desaphilip-autenticidad-2 footer .footer-content .btn-footer-text {
+    padding-left: 0.9375em;
+    font-size: 1rem;
+  }
+  .body-desaphilip footer #invitarAmigos .modal-content, .body-desaphilip-home footer #invitarAmigos .modal-content,
+.body-galeria-de-stickers footer #invitarAmigos .modal-content, .body-desaphilip-musica footer #invitarAmigos .modal-content,
+.body-desaphilip-musica-2 footer #invitarAmigos .modal-content, .body-desaphilip-amistad footer #invitarAmigos .modal-content,
+.body-desaphilip-amistad-2 footer #invitarAmigos .modal-content, .body-desaphilip-diversion footer #invitarAmigos .modal-content,
+.body-desaphilip-diversion-2 footer #invitarAmigos .modal-content, .body-desaphilip-autenticidad footer #invitarAmigos .modal-content,
+.body-desaphilip-autenticidad-2 footer #invitarAmigos .modal-content {
+    border-radius: 30px;
+    margin: 30px;
+  }
+  .body-desaphilip footer #invitarAmigos .modal-content .pop-up-footer, .body-desaphilip-home footer #invitarAmigos .modal-content .pop-up-footer,
+.body-galeria-de-stickers footer #invitarAmigos .modal-content .pop-up-footer, .body-desaphilip-musica footer #invitarAmigos .modal-content .pop-up-footer,
+.body-desaphilip-musica-2 footer #invitarAmigos .modal-content .pop-up-footer, .body-desaphilip-amistad footer #invitarAmigos .modal-content .pop-up-footer,
+.body-desaphilip-amistad-2 footer #invitarAmigos .modal-content .pop-up-footer, .body-desaphilip-diversion footer #invitarAmigos .modal-content .pop-up-footer,
+.body-desaphilip-diversion-2 footer #invitarAmigos .modal-content .pop-up-footer, .body-desaphilip-autenticidad footer #invitarAmigos .modal-content .pop-up-footer,
+.body-desaphilip-autenticidad-2 footer #invitarAmigos .modal-content .pop-up-footer {
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .body-desaphilip footer #invitarAmigos .modal-content .pop-up-footer h3, .body-desaphilip-home footer #invitarAmigos .modal-content .pop-up-footer h3,
+.body-galeria-de-stickers footer #invitarAmigos .modal-content .pop-up-footer h3, .body-desaphilip-musica footer #invitarAmigos .modal-content .pop-up-footer h3,
+.body-desaphilip-musica-2 footer #invitarAmigos .modal-content .pop-up-footer h3, .body-desaphilip-amistad footer #invitarAmigos .modal-content .pop-up-footer h3,
+.body-desaphilip-amistad-2 footer #invitarAmigos .modal-content .pop-up-footer h3, .body-desaphilip-diversion footer #invitarAmigos .modal-content .pop-up-footer h3,
+.body-desaphilip-diversion-2 footer #invitarAmigos .modal-content .pop-up-footer h3, .body-desaphilip-autenticidad footer #invitarAmigos .modal-content .pop-up-footer h3,
+.body-desaphilip-autenticidad-2 footer #invitarAmigos .modal-content .pop-up-footer h3 {
+    font-size: 2rem;
+  }
+  .body-desaphilip footer #invitarAmigos .modal-content .pop-up-footer p, .body-desaphilip-home footer #invitarAmigos .modal-content .pop-up-footer p,
+.body-galeria-de-stickers footer #invitarAmigos .modal-content .pop-up-footer p, .body-desaphilip-musica footer #invitarAmigos .modal-content .pop-up-footer p,
+.body-desaphilip-musica-2 footer #invitarAmigos .modal-content .pop-up-footer p, .body-desaphilip-amistad footer #invitarAmigos .modal-content .pop-up-footer p,
+.body-desaphilip-amistad-2 footer #invitarAmigos .modal-content .pop-up-footer p, .body-desaphilip-diversion footer #invitarAmigos .modal-content .pop-up-footer p,
+.body-desaphilip-diversion-2 footer #invitarAmigos .modal-content .pop-up-footer p, .body-desaphilip-autenticidad footer #invitarAmigos .modal-content .pop-up-footer p,
+.body-desaphilip-autenticidad-2 footer #invitarAmigos .modal-content .pop-up-footer p {
+    font-size: 3rem;
+  }
+  .body-desaphilip footer #invitarAmigos .modal-content .pop-up-footer form, .body-desaphilip-home footer #invitarAmigos .modal-content .pop-up-footer form,
+.body-galeria-de-stickers footer #invitarAmigos .modal-content .pop-up-footer form, .body-desaphilip-musica footer #invitarAmigos .modal-content .pop-up-footer form,
+.body-desaphilip-musica-2 footer #invitarAmigos .modal-content .pop-up-footer form, .body-desaphilip-amistad footer #invitarAmigos .modal-content .pop-up-footer form,
+.body-desaphilip-amistad-2 footer #invitarAmigos .modal-content .pop-up-footer form, .body-desaphilip-diversion footer #invitarAmigos .modal-content .pop-up-footer form,
+.body-desaphilip-diversion-2 footer #invitarAmigos .modal-content .pop-up-footer form, .body-desaphilip-autenticidad footer #invitarAmigos .modal-content .pop-up-footer form,
+.body-desaphilip-autenticidad-2 footer #invitarAmigos .modal-content .pop-up-footer form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+  .body-desaphilip footer #invitarAmigos .modal-content .pop-up-footer form input, .body-desaphilip-home footer #invitarAmigos .modal-content .pop-up-footer form input,
+.body-galeria-de-stickers footer #invitarAmigos .modal-content .pop-up-footer form input, .body-desaphilip-musica footer #invitarAmigos .modal-content .pop-up-footer form input,
+.body-desaphilip-musica-2 footer #invitarAmigos .modal-content .pop-up-footer form input, .body-desaphilip-amistad footer #invitarAmigos .modal-content .pop-up-footer form input,
+.body-desaphilip-amistad-2 footer #invitarAmigos .modal-content .pop-up-footer form input, .body-desaphilip-diversion footer #invitarAmigos .modal-content .pop-up-footer form input,
+.body-desaphilip-diversion-2 footer #invitarAmigos .modal-content .pop-up-footer form input, .body-desaphilip-autenticidad footer #invitarAmigos .modal-content .pop-up-footer form input,
+.body-desaphilip-autenticidad-2 footer #invitarAmigos .modal-content .pop-up-footer form input {
+    border-radius: 100px;
+    margin: 5px 0px;
+    padding: 6px;
+    text-align: center;
+  }
+  .body-desaphilip footer #invitarAmigos .modal-content .pop-up-footer form button, .body-desaphilip-home footer #invitarAmigos .modal-content .pop-up-footer form button,
+.body-galeria-de-stickers footer #invitarAmigos .modal-content .pop-up-footer form button, .body-desaphilip-musica footer #invitarAmigos .modal-content .pop-up-footer form button,
+.body-desaphilip-musica-2 footer #invitarAmigos .modal-content .pop-up-footer form button, .body-desaphilip-amistad footer #invitarAmigos .modal-content .pop-up-footer form button,
+.body-desaphilip-amistad-2 footer #invitarAmigos .modal-content .pop-up-footer form button, .body-desaphilip-diversion footer #invitarAmigos .modal-content .pop-up-footer form button,
+.body-desaphilip-diversion-2 footer #invitarAmigos .modal-content .pop-up-footer form button, .body-desaphilip-autenticidad footer #invitarAmigos .modal-content .pop-up-footer form button,
+.body-desaphilip-autenticidad-2 footer #invitarAmigos .modal-content .pop-up-footer form button {
+    width: 10em;
+    border-radius: 100px;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog, .body-desaphilip-home footer #descubrir .modal-dialog,
+.body-galeria-de-stickers footer #descubrir .modal-dialog, .body-desaphilip-musica footer #descubrir .modal-dialog,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog, .body-desaphilip-amistad footer #descubrir .modal-dialog,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog, .body-desaphilip-diversion footer #descubrir .modal-dialog,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog, .body-desaphilip-autenticidad footer #descubrir .modal-dialog,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog {
+    max-width: 570px;
+    margin: 3rem;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content {
+    border-radius: 30px;
+    position: relative;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content i.fas.fa-caret-left {
+    position: absolute;
+    color: var(--color-violeta);
+    font-size: 60px;
+    bottom: -28px;
+    right: 0px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content h4 {
+    font-size: 2rem;
+    margin: 0px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios {
+    border-radius: 15px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text {
+    width: 70%;
+    text-align: center;
+    margin: 10px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text h5 {
+    font-size: 2.24rem;
+    margin: 0px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text svg {
+    width: 6rem;
+    margin: 0px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-text p {
+    font-size: 0.9375em;
+    /* 15/16 */
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image {
+    margin: 10px;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image img {
+    width: 10rem;
+  }
+  .body-desaphilip footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-home footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-galeria-de-stickers footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-musica footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-desaphilip-musica-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-amistad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-desaphilip-amistad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-diversion footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
+.body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo {
+    width: 15rem;
   }
 
   /*
@@ -1866,10 +2273,6 @@ footer .terminos-y-condiciones .modal-body {
    * Inicio de musica.html
    *
    */
-  .body-desaphilip-musica,
-.body-desaphilip-musica-2 {
-    background-image: url("../src/assets/images/background/background-musica-mobile.jpg");
-  }
 
   /*
    * Fin de musica.html
@@ -1879,10 +2282,6 @@ footer .terminos-y-condiciones .modal-body {
    * Inicio de amistad.html
    *
   */
-  .body-desaphilip-amistad,
-.body-desaphilip-amistad-2 {
-    background-image: url("../src/assets/images/background/background-amistad-mobile.jpg");
-  }
 
   /*
    * Fin de amistad.html
@@ -1892,10 +2291,6 @@ footer .terminos-y-condiciones .modal-body {
    * Inicio de diversion.html
    *
   */
-  .body-desaphilip-diversion,
-.body-desaphilip-diversion-2 {
-    background-image: url("../src/assets/images/background/background-diversion-mobile.jpg");
-  }
 
   /*
    * Inicio de diversion.html
@@ -1905,18 +2300,48 @@ footer .terminos-y-condiciones .modal-body {
    * Inicio de autenticidad.html
    *
   */
-  .body-desaphilip-autenticidad,
-.body-desaphilip-autenticidad-2 {
-    background-image: url("../src/assets/images/background/background-autenticidad-mobile.jpg");
-  }
 
   /*
    * Fin de autenticidad.html
    *
   */
 }
+@media only screen and (min-width: 361px) and (max-width: 1060px) and (max-width: 767px) {
+  .body-desaphilip-home .instrucciones-desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 1060px) {
+  .body-desaphilip-home .instrucciones-desktop .item {
+    margin: 1em;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 1060px) {
+  .body-desaphilip-musica,
+.body-desaphilip-musica-2 {
+    background-image: url("../src/assets/images/background/background-musica-mobile.jpg");
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 1060px) {
+  .body-desaphilip-amistad,
+.body-desaphilip-amistad-2 {
+    background-image: url("../src/assets/images/background/background-amistad-mobile.jpg");
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 1060px) {
+  .body-desaphilip-diversion,
+.body-desaphilip-diversion-2 {
+    background-image: url("../src/assets/images/background/background-diversion-mobile.jpg");
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 1060px) {
+  .body-desaphilip-autenticidad,
+.body-desaphilip-autenticidad-2 {
+    background-image: url("../src/assets/images/background/background-autenticidad-mobile.jpg");
+  }
+}
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1061px) {
   .display-none-desktop {
     display: none;
   }

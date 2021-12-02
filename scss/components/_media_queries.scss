@@ -175,6 +175,7 @@
 
         .modal-dialog {
             max-width: 570px;
+            margin: 3rem;
 
             .modal-content {
                 border-radius: 30px;
@@ -192,6 +193,11 @@
 
                     .slide-content {
 
+                        h4 {
+                            font-size: 2rem;
+                            margin: 0px;
+                        }
+
                         .desafios-premios {
                             border-radius: 15px;
 
@@ -200,12 +206,22 @@
                                 flex-direction: column;
 
                                 .desafios-premios-content-text {
-                                    width: 50%;
+                                    width: 70%;
                                     text-align: center;
                                     margin: 10px;
 
+                                    h5 {
+                                        font-size: 2.24rem;
+                                        margin: 0px;
+                                    }
+
                                     svg {
-                                        width: 10rem;
+                                        width: 6rem;
+                                        margin: 0px;
+                                    }
+
+                                    p {
+                                        font-size: 0.9375em; /* 15/16 */
                                     }
                                 }
 
@@ -213,7 +229,11 @@
                                     margin: 10px;
 
                                     img {
-                                        width: 15rem;
+                                        width: 10rem;
+                                    }
+
+                                    .premio-completo {
+                                        width: 15rem;   
                                     }
                                 }
                             }
@@ -429,7 +449,7 @@
 
 
 /* Tablet Styles */
-@media only screen and (min-width: 361px) and (max-width: 960px) {
+@media only screen and (min-width: 361px) and (max-width: 1060px) {
 
     .display-none-tablet {
         display: none;
@@ -450,9 +470,201 @@
         }
     }
 
-    // .menu-principal ul li:hover ul {
-    //     width: 100%;
-    // }
+    .body-desaphilip {
+        .desaphilip {
+
+            margin-top: 6em;
+
+            .desaphilip-titulo-principal, .desaphilip-bajada, .option-text {
+                margin-right: .833332em;
+                margin-left: .833332em;
+            }
+
+            .desaphilip-titulo-principal {
+                font-size: 3rem;
+            }
+
+            .desaphilip-bajada {
+                font-size: 2.5rem;
+                padding-bottom: 0.625em; /* 10/16 */
+            }
+
+            .option-content {
+                width: 100%;;
+
+                .btn-option {
+                    width: 15em;
+                }
+            }
+
+            .btn-option-image {
+                right: -45px;
+                top: 65px;
+
+                img {
+                    width: 60%;
+                }
+            }
+
+            .btn-option-icon {
+                left: 60px;
+                top: 80px;
+            }        
+        }
+
+        footer {
+
+           .footer-content {
+                width: 100%;
+                margin-top: 0.5em;
+                margin-right: 0px;
+                margin-left: 0px;
+
+                .btn-footer {
+                    width: 9em;
+
+                    .btn-footer-icono{
+                        width: 2.1em;
+                        height: 2.1em;
+
+                        img {
+                            width: 1.5em;
+                            padding: 0.1em;
+                        }
+                    }
+                }
+
+                .icono-sombrerero {
+                    margin: 0.5em;
+
+                    img {
+                        width: 2em;
+                    }
+                }
+
+                .btn-footer-text {
+                    padding-left: 0.9375em;
+                    font-size: 1rem;
+                }
+            }
+
+            #invitarAmigos {
+
+                .modal-content {
+                    border-radius: 30px;
+                    margin: 30px;
+
+                    .pop-up-footer {
+                        border-radius: 20px;
+                        padding: 20px;
+
+                        h3 {
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            font-size: 3rem;
+                        }
+
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            margin: auto;
+                            text-align: center;
+
+                            input {
+                                border-radius: 100px;
+                                margin: 5px 0px;
+                                padding: 6px;
+                                text-align: center;
+                            }
+
+                            button {
+                                width: 10em;
+                                border-radius: 100px;
+                                margin: 10px auto;
+                                padding: 10px;
+                            }
+                        }
+                    }
+            }
+        }
+
+    #descubrir {
+
+        .modal-dialog {
+            max-width: 570px;
+            margin: 3rem;
+
+            .modal-content {
+                border-radius: 30px;
+                position: relative;
+
+                  i.fas.fa-caret-left {
+                    position: absolute;
+                    color: var(--color-violeta);
+                    font-size: 60px;
+                    bottom: -28px;
+                    right: 0px;
+                }
+
+                .pop-up-footer {
+
+                    .slide-content {
+
+                        h4 {
+                            font-size: 2rem;
+                            margin: 0px;
+                        }
+
+                        .desafios-premios {
+                            border-radius: 15px;
+
+                            .desafios-premios-content {
+                                display: flex;
+                                flex-direction: column;
+
+                                .desafios-premios-content-text {
+                                    width: 70%;
+                                    text-align: center;
+                                    margin: 10px;
+
+                                    h5 {
+                                        font-size: 2.24rem;
+                                        margin: 0px;
+                                    }
+
+                                    svg {
+                                        width: 6rem;
+                                        margin: 0px;
+                                    }
+
+                                    p {
+                                        font-size: 0.9375em; /* 15/16 */
+                                    }
+                                }
+
+                                .desafios-premios-content-image {
+                                    margin: 10px;
+
+                                    img {
+                                        width: 10rem;
+                                    }
+
+                                    .premio-completo {
+                                        width: 15rem;   
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    }
+}
 
     /*
      * Inicio de index.html
@@ -479,6 +691,20 @@
     .desaphilip-item-xs {
         justify-content: center;
     }
+
+    .body-desaphilip-home{
+        .instrucciones-desktop {
+            @include break-point-tablet(tablet-b){
+                display: none !important;
+            }
+
+            .item {
+                margin: 1em;
+            }
+        }
+    }
+
+
 
     /*
      * Inicio de home.html
@@ -561,7 +787,7 @@
 
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1061px) {
 
     .display-none-desktop {
         display: none;

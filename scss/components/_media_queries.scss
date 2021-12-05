@@ -695,11 +695,23 @@
     .body-desaphilip-home{
         .instrucciones-desktop {
             @include break-point-tablet(tablet-b){
-                display: none !important;
+                display: none;
             }
 
             .item {
                 margin: 1em;
+            }
+        }
+
+        .pop-de-instrucciones-mobile {
+            @include break-point-tablet(tablet-d){
+                display: none;
+            }
+        }
+
+        .pop-de-instrucciones-mobile {
+            @include break-point-tablet(tablet-b){
+                display: block;
             }
         }
     }
@@ -805,6 +817,17 @@
 
     /*
      * Fin de index.html
+     *
+    */
+
+    /*
+     * Inicio de home.html
+     *
+    */
+
+
+    /*
+     * Inicio de home.html
      *
     */
 

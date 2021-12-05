@@ -114,7 +114,8 @@ $grid-breakpoints: (
     mobile-a: 360px,
     tablet-a: 361px,
     tablet-b: 767px,
-    tablet-c: 1060px,
+    tablet-c: 768px,
+    tablet-d: 1060px,
     desktop: 1061px
  );
 
@@ -123,6 +124,12 @@ $grid-breakpoints: (
         @content;
     }
 }
+
+// @mixin break-point-tablet($breakpoints) {
+//     @media screen and (max-width: map-get($grid-breakpoints, $breakpoints)){ 
+//         @content;
+//     }
+// }
 
 $colores:
     #ffffff, /* 1 */

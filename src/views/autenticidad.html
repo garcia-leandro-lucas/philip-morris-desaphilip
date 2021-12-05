@@ -158,9 +158,9 @@
     </main>
 
     <footer>
-        <div class="footer-content">
-            <a href="">
-                <div class="btn-footer rojo background-rojo">
+            <div class="footer-content">
+                
+                <div class="btn-footer rojo background-rojo" data-bs-toggle="modal" data-bs-target="#invitarAmigos">
                     <div class="btn-footer-text">
                         <p class="texto-blanco mayusculas texto-roboto-l">Invitar amig@s <br>siempre garpa</p>
                     </div>
@@ -171,17 +171,13 @@
                         </picture>
                     </div>
                 </div>
-            </a>
-
-            <div class="icono-sombrerero">
-                <picture>
-                    <source srcset="../assets/images/iconos/emojic_sombrerero.webp" type="image/webp">
-                    <img src="../assets/images/iconos/emojic_sombrerero.png" alt="Logo Sombrerero" loading="lazy" class="ancho-2-5">
-                </picture>
-            </div>
-
-            <a href="">
-                <div class="btn-footer violeta background-violeta">
+                <div class="icono-sombrerero">
+                    <picture>
+                        <source srcset="../assets/images/iconos/emojic_sombrerero.webp" type="image/webp">
+                        <img src="../assets/images/iconos/emojic_sombrerero.png" alt="Logo Sombrerero" loading="lazy" class="ancho-2-5">
+                    </picture>
+                </div>
+                <div class="btn-footer violeta background-violeta" data-bs-toggle="modal" data-bs-target="#descubrir">
                     <div class="btn-footer-text">
                         <p class="texto-blanco mayusculas texto-roboto-l">Descubrí lo que <br>tenemos para vos</p>
                     </div>
@@ -192,59 +188,241 @@
                         </picture>
                     </div>
                 </div>
-            </a>
-
-            <a href="terminos_y_condiciones.html">
-                <div class="btn-ver-terminos background-transparente border-blanco display-none-mobile">
+                
+                <div class="btn-ver-terminos background-transparente border-blanco display-none-mobile display-none-tablet" data-bs-toggle="modal" data-bs-target="#verTrminosYCondiciones">
                     <p class="texto-blanco mayusculas texto-roboto-l">Ver términos <br>& condiciones</p>
                 </div>
-            </a>
-        </div>
-
-        <a href="terminos_y_condiciones.html">
-            <div class="link-ver-terminos display-block-mobile display-none-desktop display-none-tablet">
+                
+            </div>
+            
+            <div class="link-ver-terminos display-block-mobile display-block-tablet display-none-desktop" data-bs-toggle="modal" data-bs-target="#verTrminosYCondiciones">
                 <p class="texto-blanco mayusculas texto-roboto-l">Ver términos & condiciones</p>
             </div>
-        </a>
-
-        <!-- Popup, al presionar descubrir -->
-        <!-- <div class="pop-up-invitar-amigos">
-            <h4>Ir más allá tiene su recompensa</h4>
-            <div>
-                <p>Desaphilip música</p>
+            
+            <!-- Popup, al presionar invitar_amigos -->
+            <div class="modal fade" id="invitarAmigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <i class="fas fa-caret-right"></i>
+                        <div class="pop-up-footer background-rojo texto-center">
+                            <h3 class="texto-blanco texto-ombudsman texto-titular-pop-up-footer-3 fuente-heredada interletrado-005 interlineado-1">Tus amigXs están en todas, <br>¡cómo se van a perder ésta!</h3>
+                            <p class="texto-amarillo texto-fave texto-bajada-pop-up-footer-4 fuente-heredada interlineado-09">¡Invitalos a ser parte!</p>
+                            <form action="">
+                                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
+                                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
+                                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
+                                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
+                                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
+                                <button type="submit" class="texto-rojo mayusculas background-blanco border-none">Invitar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Popup, al presionar invitar_amigos -->
+            <!-- Popup, al presionar descubrir -->
+            <div class="modal fade" id="descubrir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <i class="fas fa-caret-left"></i>
+                        <div class="pop-up-footer background-violeta texto-center">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="background-rojo slide-content">
+                                            <h4 class="texto-ombudsman mayusculas texto-blanco texto-size-25 margin-b-10">Con este desafío participás por</h4>
+                                            <div class="desafios-premios background-blanco">
+                                                <div class="desafios-premios-content">
+                                                    <div class="desafios-premios-content-text">
+                                                        <h5 class="texto-ombudsman mayusculas texto-rojo margin-b-10 texto-size-25">Desaphilip Música</h5>
+                                                        <svg viewBox="0 0 90 28.2" class="margin-b-10">
+                                                        <path d="M16.9 13.5c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6V0h3.2v7.3C4.7 5.8 6.6 5 8.7 5c2.3 0 4.2.8 5.8 2.5 1.6 1.7 2.4 3.7 2.4 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.6.5-3.7 1.5-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.4 0 2.7-.5 3.7-1.5 1.1-1 1.6-2.2 1.6-3.6m4.9-8.2h3.2v16.3h-3.2V5.3zm21.9 14.5c-.2 2.1-.7 4-2.3 5.7-1.8 1.9-4.5 3-7.2 2.7-.3 0-.5-.1-.8-.1-.8-.2-1.5-.5-2.2-.9-.6-.4-1.2-.8-1.7-1.3s-1-1-1.4-1.7l2.7-1.7c1.2 1.7 2.7 2.6 4.5 2.6 3.1 0 5-2.4 5.3-5.4-1.6 1.5-3.4 2.2-5.5 2.2-2.3 0-4.2-.8-5.8-2.5-1.6-1.6-2.4-3.6-2.4-5.9 0-2.3.8-4.3 2.5-6 1.7-1.7 3.7-2.5 6-2.5s4.3.8 6 2.5c1.7 1.7 2.5 3.6 2.5 6v3.8c-.1.8-.1 1.7-.2 2.5m-3.1-6.3c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c2.9 0 5.3-2.4 5.3-5.2m21.5 0c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6V0h3.2v7.3C46.7 5.8 48.6 5 50.7 5c2.3 0 4.2.8 5.8 2.5 1.6 1.7 2.4 3.7 2.4 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.4 0 2.7-.5 3.7-1.5 1.1-1.1 1.6-2.3 1.6-3.7m21 0c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6 0-2.3.8-4.3 2.5-6 1.7-1.7 3.6-2.5 6-2.5 2.3 0 4.3.8 6 2.5 1.7 1.7 2.5 3.6 2.5 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.5 0 2.7-.5 3.7-1.5 1.1-1.1 1.6-2.3 1.6-3.7m9.3 2.9l-3.5 5.2h-3.7l5.3-8.2-5.3-8.2h3.7l3.5 5.3 3.4-5.3H90l-5.3 8.2 5.3 8.2h-3.7l-3.5-5.2zM18.6.1h3.2v3.1h-3.2V.1z"></path>
+                                                    </svg>
+                                                    <p class="texto-size-13-6 texto-negro texto-roboto-r">Bandas en vivo, show de baile, platos de autor, tragos y mucho más.</p>
+                                                </div>
+                                                <div class="desafios-premios-content-image">
+                                                    <img src="../assets/images/premios/musica_y_cuisine.png" alt="BixBog Musique & Cuisine">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="background-violeta-medio slide-content">
+                                        <h4 class="texto-ombudsman mayusculas texto-blanco texto-size-25 margin-b-10">Con este desafío participás por</h4>
+                                        <div class="desafios-premios background-blanco">
+                                            <div class="desafios-premios-content">
+                                                <div class="desafios-premios-content-text">
+                                                    <h5 class="texto-ombudsman mayusculas texto-violeta margin-b-10 texto-size-25">Desaphilip amistad</h5>
+                                                    <svg viewBox="0 0 90 28.2" class="margin-b-10">
+                                                    <path d="M16.9 13.5c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6V0h3.2v7.3C4.7 5.8 6.6 5 8.7 5c2.3 0 4.2.8 5.8 2.5 1.6 1.7 2.4 3.7 2.4 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.6.5-3.7 1.5-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.4 0 2.7-.5 3.7-1.5 1.1-1 1.6-2.2 1.6-3.6m4.9-8.2h3.2v16.3h-3.2V5.3zm21.9 14.5c-.2 2.1-.7 4-2.3 5.7-1.8 1.9-4.5 3-7.2 2.7-.3 0-.5-.1-.8-.1-.8-.2-1.5-.5-2.2-.9-.6-.4-1.2-.8-1.7-1.3s-1-1-1.4-1.7l2.7-1.7c1.2 1.7 2.7 2.6 4.5 2.6 3.1 0 5-2.4 5.3-5.4-1.6 1.5-3.4 2.2-5.5 2.2-2.3 0-4.2-.8-5.8-2.5-1.6-1.6-2.4-3.6-2.4-5.9 0-2.3.8-4.3 2.5-6 1.7-1.7 3.7-2.5 6-2.5s4.3.8 6 2.5c1.7 1.7 2.5 3.6 2.5 6v3.8c-.1.8-.1 1.7-.2 2.5m-3.1-6.3c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c2.9 0 5.3-2.4 5.3-5.2m21.5 0c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6V0h3.2v7.3C46.7 5.8 48.6 5 50.7 5c2.3 0 4.2.8 5.8 2.5 1.6 1.7 2.4 3.7 2.4 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.4 0 2.7-.5 3.7-1.5 1.1-1.1 1.6-2.3 1.6-3.7m21 0c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6 0-2.3.8-4.3 2.5-6 1.7-1.7 3.6-2.5 6-2.5 2.3 0 4.3.8 6 2.5 1.7 1.7 2.5 3.6 2.5 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.5 0 2.7-.5 3.7-1.5 1.1-1.1 1.6-2.3 1.6-3.7m9.3 2.9l-3.5 5.2h-3.7l5.3-8.2-5.3-8.2h3.7l3.5 5.3 3.4-5.3H90l-5.3 8.2 5.3 8.2h-3.7l-3.5-5.2zM18.6.1h3.2v3.1h-3.2V.1z"></path>
+                                                </svg>
+                                                <p class="texto-size-13-6 texto-negro texto-roboto-r">Parapente, paintball, vuelo, trekking, paseos en velero, buceo y muchos más.</p>
+                                            </div>
+                                            <div class="desafios-premios-content-image">
+                                                <img src="../assets/images/premios/entreme.png" alt="BixBog Extreme">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="background-azul slide-content">
+                                    <h4 class="texto-ombudsman mayusculas texto-blanco texto-size-25 margin-b-10">Con este desafío participás por</h4>
+                                    <div class="desafios-premios background-blanco">
+                                        <div class="desafios-premios-content">
+                                            <div class="desafios-premios-content-text">
+                                                <h5 class="texto-ombudsman mayusculas texto-azul margin-b-10 texto-size-25">Desaphilip Diversión</h5>
+                                                <svg viewBox="0 0 90 28.2" class="margin-b-10">
+                                                <path d="M16.9 13.5c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6V0h3.2v7.3C4.7 5.8 6.6 5 8.7 5c2.3 0 4.2.8 5.8 2.5 1.6 1.7 2.4 3.7 2.4 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.6.5-3.7 1.5-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.4 0 2.7-.5 3.7-1.5 1.1-1 1.6-2.2 1.6-3.6m4.9-8.2h3.2v16.3h-3.2V5.3zm21.9 14.5c-.2 2.1-.7 4-2.3 5.7-1.8 1.9-4.5 3-7.2 2.7-.3 0-.5-.1-.8-.1-.8-.2-1.5-.5-2.2-.9-.6-.4-1.2-.8-1.7-1.3s-1-1-1.4-1.7l2.7-1.7c1.2 1.7 2.7 2.6 4.5 2.6 3.1 0 5-2.4 5.3-5.4-1.6 1.5-3.4 2.2-5.5 2.2-2.3 0-4.2-.8-5.8-2.5-1.6-1.6-2.4-3.6-2.4-5.9 0-2.3.8-4.3 2.5-6 1.7-1.7 3.7-2.5 6-2.5s4.3.8 6 2.5c1.7 1.7 2.5 3.6 2.5 6v3.8c-.1.8-.1 1.7-.2 2.5m-3.1-6.3c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c2.9 0 5.3-2.4 5.3-5.2m21.5 0c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6V0h3.2v7.3C46.7 5.8 48.6 5 50.7 5c2.3 0 4.2.8 5.8 2.5 1.6 1.7 2.4 3.7 2.4 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.4 0 2.7-.5 3.7-1.5 1.1-1.1 1.6-2.3 1.6-3.7m21 0c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6 0-2.3.8-4.3 2.5-6 1.7-1.7 3.6-2.5 6-2.5 2.3 0 4.3.8 6 2.5 1.7 1.7 2.5 3.6 2.5 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.5 0 2.7-.5 3.7-1.5 1.1-1.1 1.6-2.3 1.6-3.7m9.3 2.9l-3.5 5.2h-3.7l5.3-8.2-5.3-8.2h3.7l3.5 5.3 3.4-5.3H90l-5.3 8.2 5.3 8.2h-3.7l-3.5-5.2zM18.6.1h3.2v3.1h-3.2V.1z"></path>
+                                            </svg>
+                                            <p class="texto-size-13-6 texto-negro texto-roboto-r">Espectáculos teatrales, shows en vivo, stand up, gastronomía y mucho más.</p>
+                                        </div>
+                                        <div class="desafios-premios-content-image">
+                                            <img src="../assets/images/premios/noche_de_teatro.png" alt="BixBog Noche de Teatro">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="background-amarillo slide-content">
+                                <h4 class="texto-ombudsman mayusculas texto-blanco texto-size-25 margin-b-10">Con este desafío participás por</h4>
+                                <div class="desafios-premios background-blanco">
+                                    <div class="desafios-premios-content">
+                                        <div class="desafios-premios-content-text">
+                                            <h5 class="texto-ombudsman mayusculas texto-amarillo-medio margin-b-10 texto-size-25">Desaphilip autenticidad</h5>
+                                            <svg viewBox="0 0 90 28.2" class="margin-b-10">
+                                            <path d="M16.9 13.5c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6V0h3.2v7.3C4.7 5.8 6.6 5 8.7 5c2.3 0 4.2.8 5.8 2.5 1.6 1.7 2.4 3.7 2.4 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.6.5-3.7 1.5-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.4 0 2.7-.5 3.7-1.5 1.1-1 1.6-2.2 1.6-3.6m4.9-8.2h3.2v16.3h-3.2V5.3zm21.9 14.5c-.2 2.1-.7 4-2.3 5.7-1.8 1.9-4.5 3-7.2 2.7-.3 0-.5-.1-.8-.1-.8-.2-1.5-.5-2.2-.9-.6-.4-1.2-.8-1.7-1.3s-1-1-1.4-1.7l2.7-1.7c1.2 1.7 2.7 2.6 4.5 2.6 3.1 0 5-2.4 5.3-5.4-1.6 1.5-3.4 2.2-5.5 2.2-2.3 0-4.2-.8-5.8-2.5-1.6-1.6-2.4-3.6-2.4-5.9 0-2.3.8-4.3 2.5-6 1.7-1.7 3.7-2.5 6-2.5s4.3.8 6 2.5c1.7 1.7 2.5 3.6 2.5 6v3.8c-.1.8-.1 1.7-.2 2.5m-3.1-6.3c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c2.9 0 5.3-2.4 5.3-5.2m21.5 0c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6V0h3.2v7.3C46.7 5.8 48.6 5 50.7 5c2.3 0 4.2.8 5.8 2.5 1.6 1.7 2.4 3.7 2.4 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.4 0 2.7-.5 3.7-1.5 1.1-1.1 1.6-2.3 1.6-3.7m21 0c0 2.3-.8 4.3-2.5 6-1.7 1.6-3.6 2.5-6 2.5-2.3 0-4.3-.8-6-2.5-1.6-1.6-2.5-3.6-2.5-6 0-2.3.8-4.3 2.5-6 1.7-1.7 3.6-2.5 6-2.5 2.3 0 4.3.8 6 2.5 1.7 1.7 2.5 3.6 2.5 6m-3.2 0c0-1.4-.5-2.7-1.6-3.7-1-1-2.3-1.6-3.7-1.6-1.4 0-2.7.5-3.7 1.6-1 1-1.5 2.3-1.5 3.7 0 1.5.5 2.7 1.5 3.7s2.3 1.5 3.7 1.5c1.5 0 2.7-.5 3.7-1.5 1.1-1.1 1.6-2.3 1.6-3.7m9.3 2.9l-3.5 5.2h-3.7l5.3-8.2-5.3-8.2h3.7l3.5 5.3 3.4-5.3H90l-5.3 8.2 5.3 8.2h-3.7l-3.5-5.2zM18.6.1h3.2v3.1h-3.2V.1z"></path>
+                                        </svg>
+                                        <p class="texto-size-13-6 texto-negro texto-roboto-r">Cursos, workshps, master class, ensambles, talleres y muchos más.</p>
+                                    </div>
+                                    <div class="desafios-premios-content-image">
+                                        <img src="../assets/images/premios/aprendiz.png" alt="BixBog Aprendiz">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="background-violeta slide-content">
+                <h4 class="texto-ombudsman mayusculas texto-blanco texto-size-25 margin-b-10 line-height-1">Además, si completás todos <br>los desafíos podés llevarte</h4>
+                <div class="desafios-premios background-blanco">
+                    <div class="desafios-premios-content">
+                        <div class="desafios-premios-content-text">
+                            <p class="texto-size-13-6 texto-negro texto-roboto-r">Tratamientos corporales, spas, centros de estética, asesoramiento de imagen, relookeos y mucho más.</p>
+                        </div>
+                        <div class="desafios-premios-content-image">
+                            <img class="premio-completo" src="../assets/images/premios/duo_therapy-look_and_style.png" alt="BixBog Duo Therapy + Look & Style">
+                        </div>
+                    </div>
+                </div>
+                <p class="texto-blanco margin-t-10 texto-roboto-r texto-size-13">*Los ganadores serán elegidos por un jurado de notables.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Fin Popup, al presionar descubrir -->
+<!-- Popup, al presionar ver terminos y condiciones -->
+<div class="modal fade terminos-y-condiciones" id="verTrminosYCondiciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Bases y condiciones Desaphilip</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h2>1. ÁMBITO DE APLICACIÓN</h2>
+            <p><strong>1.1.</strong> Esta acción denominada “Decilo a lo Philip” (la “Acción”), organizada por Massalin Particulares S.R.L. ("MP"), se desarrollará a través del sitio web <a href="https://www.miphilipmorris.com.ar" target="_blank">https://www.miphilipmorris.com.ar</a> (el “Sitio”) y tendrá vigencia en todala República Argentina exclusivamente.</p>
+            <br>
+            <p><strong>1.2.</strong> Para participar en la Acción no se requiere la compra de producto alguno y podrán hacerlo las personas físicas, fumadoras, mayores de 18 (dieciocho) años, que residan en la República Argentina (a excepción de las provincias de Santa Fe, Santa Cruz, Neuquén, San Luis, La Pampa, Tierra del Fuego, la ciudad de Puerto Madryn (provincia de Chubut) y la ciudad de Posadas (provincia de Misiones) y que hubieren aceptado recibir materiales de publicidad de productos elaborados con tabaco.</p>
+            <h2>2. DEFINICIONES</h2>
+            <p><strong>2.1.</strong> A los efectos de la presente Acción, se tendrán en cuenta las siguientes definiciones:<br>
+                <br>
+                “Bases”: son las estipulaciones y cláusulas establecidas en este documento y en todas las modificaciones futuras que pudieran efectuarse, que regirán el funcionamiento de la Acción.<br>
+                <br>
+                “Call Center”: es el centro de atención telefónica, <a href="tel:+08008881000" target="_blank">0800-888-1000</a>, que los Participantes tendrán a disposición de lunes a viernes, en el horario de 09:00 a 20:00 horas, a fin de realizar consultas sobre la Acción y realizar cuantas más acciones se encuentren permitidas en estas Bases.<br>
+                <br>
+                “La Empresa” o “MP”: es Massalin Particulares S.R.L.<br>
+                <br>
+                “Potencial/es Ganador/es”: es/son el/los Participante/s que resultare/n beneficiado/s en la Acción, conforme lo dispuesto en las presentes Bases.
+                “Acción”: Es la Acción denominada “Decilo a lo Philip”, la cual estará sujeta a las presentes Bases.<br>
+                <br>
+                “Sitio”: Es el sitio web <a href="https://www.miphilipmorris.com.ar" target="_blank">https://www.miphilipmorris.com.ar</a> , de acceso restringido, y al cual los Participantes podrán acceder a fin de llevar a cabo diferentes actividades relacionadas a la Acción.<br>
+                <br>
+                “Participante/s”: Fumador mayor de 18 (dieciocho) años que acepte participar de la Acción y que hubiere aceptado recibir comunicaciones directas sobre productos elaborados con tabaco.
+            </p>
+            <h2>3. PLAZO DE VIGENCIA</h2>
+            <p><strong>3.1</strong> Esta Acción tendrá vigencia desde el 11 de octubre de 2021 hasta el 30 de noviembre de 2021, ambas fechas inclusive.</p>
+            <br>
+            <p><strong>3.2</strong> La Empresa se reserva el derecho de suspender y/o terminar la presente Acción en cualquier momento, sin causa y sin otra obligación que la de comunicar tal decisión a los Participantes a través de los medios que la Empresa considerare convenientes, con una antelación mínima de 10 (diez) días corridos a la fecha de efectiva suspensión o terminación. El ejercicio de este derecho por parte de la Empresa no otorgará a los Participantes derecho a reclamo y/o indemnización alguna.</p>
+            <h2>4. SISTEMA DE INGRESO Y CONDICIONES DE PERMANENCIA</h2>
+            <p><strong>4.1</strong> Los Participantes interesados en la Acción, deberán: a) ingresar/registrarse en el Sitio; b) completar la consigna habilitada al momento en que ingrese; c) crear un “sticker” y publicarlo acorde a la consigna descripta en el Sitio.</p>
+            <br>
+            <p><strong>4.2</strong> La posibilidad de los Participantes de participar de la Acción quedará sujeta al cumplimiento de la consigna publicada en el Sitio. Cada Participante podrá optar por completar una única consigna, y participar por la contraprestación de esa misma, o bien ingresar al Sitio cada 10 (diez) días y completar las 4 (cuatro) consignas que se irán habilitando, y participar, además, por la contraprestación mayor a otorgar a un ganador entre todos aquellos que completen las 4 (cuatro) consignas.</p>
+            <h2>5. RÉGIMEN DE FUNCIONAMIENTO DE LA ACCIÓN</h2>
+            <p><strong>5.1</strong> La Acción ofrece la posibilidad de obtener:
+                <br><br>
+                
                 <ul>
-                    <li>PARLANTE BLUETOOTH</li>
-                    <li>HEADPHONES</li>
+                    <li>1 (uno) Bigbox Musique & Cuisine (Digital) por resultar ganador de la consigna de MÚSICA.</li>
+                    <li>1 (uno) Bigbox Extreme (Digital) por resultar ganador de la consigna de AMISTAD.</li>
+                    <li>1 (uno) Bigbox Aprendiz (Digital) por resultar ganador de la consigna de AUTENTICIDAD.</li>
+                    <li>1 (uno) Bigbox Noche de Teatro (Digital) por resultar ganador de la consigna de DIVERSIÓN.</li>
+                    <li>1 (uno) Bigbox Duo Therapy (Digital) + 1 Bigbox Look&Style por resultar ganador de la Acción habiendo participado de las 4 (cuatro) consignas publicadas en el Sitio.</li>
                 </ul>
-            </div>
-
-            <h4>Si la rompiste en todos los desafíos, <br>participás por un cambio de look completo.</h4>
-            <div>
-                <p>Tatuajes</p>
-                <p>Cambios <br>de look en<br> peluquería</p>
-                <p>Gift cards en <br>indumentaria</p>
-            </div>
-            <p>* Los ganadores serán elegidos por un jurado de notables.</p>
-        </div> -->
-        <!-- Fin Popup, al presionar descubrir -->
-
-        <!-- Popup, al presionar invitar_amigos -->
-
-        <!--   <div class="pop-up-invitar-amigos background-rojo texto-center">
-            <h3 class="texto-blanco texto-ombudsman texto-titular-pop-up-footer-3 fuente-heredada interletrado-005 interlineado-1">Tus amigXs están en todas, <br>¡cómo se van a perder ésta!</h3>
-            <p class="texto-amarillo texto-fave texto-bajada-pop-up-footer-4 fuente-heredada interlineado-09">¡Invitalos a ser parte!</p>
-            <form action="">
-                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
-                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
-                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
-                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
-                <input type="text" placeholder="direccion1@mail.com" class="background-bordo texto-blanco border-none">
-                <button type="submit" class="texto-rojo mayusculas background-blanco border-none">Invitar</button>
-            </form>
-        </div> -->
-
-        <!-- Fin Popup, al presionar invitar_amigos -->
-    </footer>
+                
+                <br><br>
+                Habrá un stock de 5 (cinco) Bigbox por cada consigna y 1 (uno) Bigbox para el ganador de la Acción que haya participado de las 4 (cuatro) consignas.
+            </p>
+            <p>Cada consigna tendrá 5 (cinco) ganadores seleccionados por un jurado de notables, que validarán que el Participante haya:</p>
+            <br>
+            <p>Participado de la consigna de la contraprestación en cuestión.
+                Creado un “sticker” relacionado a ese desafío que sea seleccionado como el “más creativo”.
+            Para participar por el premio mayor de la Acción, se tienen que haber completado los 4 (cuatro) consignas y sobre todos los que cumplan con este requisito, el jurado de notables seleccionará al creador de los mejores 4 (cuatro) “stickers”.</p>
+            <br>
+            <p>Los Potenciales Ganadores del Bigbox para un desafío individual, no podrán volver a ganar otro desafío individual, pero sí aplicar para la contraprestación mayor de la Acción.</p>
+            <br>
+            <p><strong>5.2</strong> Los Participantes que resulten ganadores de las consignas, recibirán un mail de aviso, en el que deberán confirmar querer recibir la Bigbox, o bien podrán optar también por recibir el monto equivalente del Bigbox que haya ganado (con el precio que la misma tuviera en ese momento), como equivalente en Oh Gift Card (<a href="https://www.ohgiftcard.com.ar/" target="_blank">https://www.ohgiftcard.com.ar/</a>).</p>
+            <br>
+            <p><strong>5.3</strong> En cuanto a las fechas de habilitación de cada desafío:</p>
+            <br>
+            <ul>
+                <li><strong>MÚSICA:</strong> 11/10/2021</li>
+                <li><strong>AMISTAD:</strong> 21/10/2021</li>
+                <li><strong>AUTENTICIDAD:</strong> 1/11/2021</li>
+                <li><strong>DIVERSIÓN:</strong> 11/11/2021</li>
+            </ul>
+            <br>
+            Una vez habilitado la consigna, queda disponible para su participación hasta el cierre de la Acción al 30 de noviembre de 2021.
+            Sin embargo, el Participante podrá aplicar para ser ganador de la consigna en cuestión hasta el día en que se habilite un nueva consigna (ya que la contraprestación de la consigna previa sería otorgada esa misma semana).
+            El Participante que complete una consigna cuya contraprestación ya fue entregada, podrá aplicar igualmente como ganador de la contraprestación mayor de la Acción.
+            <h2>6. MISCELÁNEAS</h2>
+            <p><strong>6.5</strong> El Sitio puede contener enlaces a otros sitios web, lo cual no indica que sean propiedad de o que sean operados por MP. En virtud que MP no tiene control alguno sobre tales sitios web, MP no será responsable por los contenidos, materiales, acciones o servicios prestados por los mismos, ni por daños, perjuicios o pérdidas ocasionadas por la utilización de los mismos, sean causadas directa o indirectamente. La presencia de enlaces a otros sitios web no implica una sociedad, relación, aprobación ni respaldo de MP a dichos sitios y sus contenidos.</p>
+            <br>
+            <p><strong>6.6</strong> MP no será responsable por las fallas técnicas de ningún tipo, de hardware o de software, por pérdida o falta de disponibilidad de conexiones de red ni por transmisiones informáticas defectuosas, incompletas, tergiversadas o retrasadas que puedan limitar, suspender o impedir de cualquier forma la capacidad de los Participantes para participar en la presente Acción.</p>
+            <br>
+            <p><strong>6.7</strong> MP podrá ampliar la cantidad y valor de las contraprestaciones ofrecidas, así como el plazo de vigencia de la Acción. Asimismo, MP podrá cancelar, suspender o modificar la Acción cuando circunstancias no previstas en estas Bases, o que constituyan caso fortuito o fuerza mayor, lo justifiquen (incluyendo – sin que la presente enumeración implique limitación – prohibiciones y/o restricciones impuestas por disposiciones legales nacionales, provinciales o municipales, que afectaren el desarrollo de la presente Acción).</p>
+            <br>
+            <p><strong>6.8</strong> Sin obligación de compra. La participación en esta Acción no implica la compra de producto alguno. Las personas habilitadas a participar de acuerdo a estas Bases, podrán participar de la Acción por el solo hecho de ingresar al Sitio y registrarse en él.</p>
+            <br>
+            <p><strong>6.9</strong> Los interesados en obtener mayor información sobre la Acción, podrán comunicarse telefónicamente al 0800-888-1000, en días hábiles, de lunes a viernes, de 09:00 hs. a 20:00 horas.</p>
+            <br>
+            <p><strong>6.10</strong> MP se reserva el derecho de admisión y participación de la Acción, conservando el derecho de rechazar y/o suprimir de la Acción a los Participantes que, a criterio de MP, infringieren las presentes Bases.</p>
+            <br>
+            <p><strong>6.11</strong> Para cualquier cuestión judicial que pudiera derivarse de esta Acción, los Participantes y MP se someterán a la jurisdicción de los tribunales ordinarios de la Ciudad de Buenos Aires.</p>
+            <br>
+            <p><strong>6.12</strong> La participación en la Acción implica la aceptación de estas Bases, así como de las decisiones que adopte MP, conforme a derecho, sobre cualquier cuestión no prevista en las mismas.</p>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Fin Popup, al presionar ver terminos y condiciones -->
+</footer>
 
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -49,7 +49,22 @@
         @include margin(1.25em);
         justify-content: start;
         align-items: center;
-        border: 3px solid #fff;
+    }
+
+    .musica {
+        border: 3px solid #ff4e4e;
+    }
+
+    .amistad {
+        border: 3px solid #f655ff;
+    }
+
+    .diversion {
+        border: 3px solid #3493ff;
+    }
+
+    .autenticidad {
+        border: 3px solid #ffce45;
     }
 
     .desaphilip-image {
@@ -80,7 +95,11 @@
     } */
     .musica {
         box-shadow: inset 0em 0em 2em 0.3em var(--color-rojo), inset 0em 0em 1em 0.2em var(--color-rojo), inset 0em 0em 0.5em 0.1em var(--color-rojo), 0em 0em 2em 0.3em var(--color-rojo), 0em 0em 1em 0.2em var(--color-rojo), 0em 0em 0.5em 0.1em var(--color-rojo);
-        animation: neon-musica 1.5s infinite alternate; 
+        animation: neon-musica 1.5s infinite alternate;
+
+        &:hover {
+            animation: none;
+        }
     }
 
     @keyframes neon-musica {
@@ -101,7 +120,11 @@
 
     .amistad {
         box-shadow: inset 0em 0em 2em 0.3em var(--color-fucsia), 0em 0em 2em 0.3em var(--color-fucsia);
-        animation: neon-amistad 1.5s infinite alternate; 
+        animation: neon-amistad 1.5s infinite alternate;
+
+        &:hover {
+            animation: none;
+        } 
     }
 
     @keyframes neon-amistad {
@@ -120,6 +143,10 @@
     .diversion {
         box-shadow: inset 0em 0em 2em 0.3em var(--color-azul), 0em 0em 2em 0.3em var(--color-azul);
         animation: neon-diversion 1.5s infinite alternate;
+
+        &:hover {
+            animation: none;
+        }
     }
 
     @keyframes neon-diversion {
@@ -138,6 +165,10 @@
     .autenticidad {
         box-shadow: inset 0em 0em 2em 0.3em var(--color-amarillo), 0em 0em 2em 0.3em var(--color-amarillo);
         animation: neon-autenticidad 1.5s infinite alternate;
+
+        &:hover {
+            animation: none;
+        }
     }
 
     @keyframes neon-autenticidad {
@@ -152,6 +183,49 @@
           box-shadow: none;
         }    
     }
+
+    .pop-de-instrucciones-mobile {
+            .modal-content {
+                padding: 10px;
+                border-radius: 15px;
+
+                    h2 {
+                        font-size: 30px;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        letter-spacing: 1.5px;
+                    }
+
+                    .modal-content-item {
+                        display: flex;
+                        justify-content: flex-start;
+                        padding: 10px;
+                        align-items: center;
+                        margin: 10px;
+                        border-radius: 15px;
+
+                        .modal-content-item-numero {
+                            font-size: 80px;
+                            line-height: 0;
+                            margin: 10px;
+                        }
+
+                        .modal-content-item-descripcion {
+                            font-size: 25px;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    .participar {
+                        padding: 10px;
+                        border-radius: 100px;
+                        width: 10em;
+                        display: flex;
+                        justify-content: center;
+                        margin: 5px auto;
+                    }
+            }
+        }
 
 }
 

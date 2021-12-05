@@ -1159,7 +1159,18 @@ footer .terminos-y-condiciones .modal-body {
   margin: 1.25em;
   justify-content: start;
   align-items: center;
-  border: 3px solid #fff;
+}
+.body-desaphilip-home .musica {
+  border: 3px solid #ff4e4e;
+}
+.body-desaphilip-home .amistad {
+  border: 3px solid #f655ff;
+}
+.body-desaphilip-home .diversion {
+  border: 3px solid #3493ff;
+}
+.body-desaphilip-home .autenticidad {
+  border: 3px solid #ffce45;
 }
 .body-desaphilip-home .desaphilip-image {
   margin-right: 15px;
@@ -1180,6 +1191,9 @@ footer .terminos-y-condiciones .modal-body {
   box-shadow: inset 0em 0em 2em 0.3em var(--color-rojo), inset 0em 0em 1em 0.2em var(--color-rojo), inset 0em 0em 0.5em 0.1em var(--color-rojo), 0em 0em 2em 0.3em var(--color-rojo), 0em 0em 1em 0.2em var(--color-rojo), 0em 0em 0.5em 0.1em var(--color-rojo);
   animation: neon-musica 1.5s infinite alternate;
 }
+.body-desaphilip-home .musica:hover {
+  animation: none;
+}
 @keyframes neon-musica {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     box-shadow: inset 0em 0em 2em 0.3em var(--color-rojo), inset 0em 0em 1em 0.2em var(--color-rojo), inset 0em 0em 0.5em 0.1em var(--color-rojo), 0em 0em 2em 0.3em var(--color-rojo), 0em 0em 1em 0.2em var(--color-rojo), 0em 0em 0.5em 0.1em var(--color-rojo);
@@ -1191,6 +1205,9 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-home .amistad {
   box-shadow: inset 0em 0em 2em 0.3em var(--color-fucsia), 0em 0em 2em 0.3em var(--color-fucsia);
   animation: neon-amistad 1.5s infinite alternate;
+}
+.body-desaphilip-home .amistad:hover {
+  animation: none;
 }
 @keyframes neon-amistad {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -1204,6 +1221,9 @@ footer .terminos-y-condiciones .modal-body {
   box-shadow: inset 0em 0em 2em 0.3em var(--color-azul), 0em 0em 2em 0.3em var(--color-azul);
   animation: neon-diversion 1.5s infinite alternate;
 }
+.body-desaphilip-home .diversion:hover {
+  animation: none;
+}
 @keyframes neon-diversion {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     box-shadow: inset 0em 0em 2em 0.3em var(--color-azul), 0em 0em 2em 0.3em var(--color-azul);
@@ -1216,6 +1236,9 @@ footer .terminos-y-condiciones .modal-body {
   box-shadow: inset 0em 0em 2em 0.3em var(--color-amarillo), 0em 0em 2em 0.3em var(--color-amarillo);
   animation: neon-autenticidad 1.5s infinite alternate;
 }
+.body-desaphilip-home .autenticidad:hover {
+  animation: none;
+}
 @keyframes neon-autenticidad {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     box-shadow: inset 0em 0em 2em 0.3em var(--color-amarillo), 0em 0em 2em 0.3em var(--color-amarillo);
@@ -1223,6 +1246,41 @@ footer .terminos-y-condiciones .modal-body {
   25%, 29%, 59% {
     box-shadow: none;
   }
+}
+.body-desaphilip-home .pop-de-instrucciones-mobile .modal-content {
+  padding: 10px;
+  border-radius: 15px;
+}
+.body-desaphilip-home .pop-de-instrucciones-mobile .modal-content h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+.body-desaphilip-home .pop-de-instrucciones-mobile .modal-content .modal-content-item {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+  border-radius: 15px;
+}
+.body-desaphilip-home .pop-de-instrucciones-mobile .modal-content .modal-content-item .modal-content-item-numero {
+  font-size: 80px;
+  line-height: 0;
+  margin: 10px;
+}
+.body-desaphilip-home .pop-de-instrucciones-mobile .modal-content .modal-content-item .modal-content-item-descripcion {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+.body-desaphilip-home .pop-de-instrucciones-mobile .modal-content .participar {
+  padding: 10px;
+  border-radius: 100px;
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
 }
 
 /*
@@ -2308,12 +2366,22 @@ footer .terminos-y-condiciones .modal-body {
 }
 @media only screen and (min-width: 361px) and (max-width: 1060px) and (max-width: 767px) {
   .body-desaphilip-home .instrucciones-desktop {
-    display: none !important;
+    display: none;
   }
 }
 @media only screen and (min-width: 361px) and (max-width: 1060px) {
   .body-desaphilip-home .instrucciones-desktop .item {
     margin: 1em;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 1060px) and (max-width: 1060px) {
+  .body-desaphilip-home .pop-de-instrucciones-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 1060px) and (max-width: 767px) {
+  .body-desaphilip-home .pop-de-instrucciones-mobile {
+    display: block;
   }
 }
 @media only screen and (min-width: 361px) and (max-width: 1060px) {
@@ -2356,6 +2424,14 @@ footer .terminos-y-condiciones .modal-body {
   */
   /*
    * Fin de index.html
+   *
+  */
+  /*
+   * Inicio de home.html
+   *
+  */
+  /*
+   * Inicio de home.html
    *
   */
 }

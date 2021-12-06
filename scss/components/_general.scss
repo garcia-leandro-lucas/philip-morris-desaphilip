@@ -150,6 +150,10 @@ li {
     /* 30/16 */
 }
 
+.top-30 {
+    top: 30px;
+}
+
 .top-40 {
     top: 40px;
 }
@@ -164,6 +168,10 @@ li {
 
 .top-115 {
     top: 115px;
+}
+
+.top-130 {
+    top: 130px;
 }
 
 .right-0 {
@@ -882,6 +890,10 @@ footer {
         display: flex;
         justify-content: flex-end;
         position: absolute;
+
+        .option-image-object {
+            width: 9.375em; /* 150/16 */
+        }
     }
 
     .option-content-btn {

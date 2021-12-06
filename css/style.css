@@ -257,6 +257,10 @@ li {
   /* 30/16 */
 }
 
+.top-30 {
+  top: 30px;
+}
+
 .top-40 {
   top: 40px;
 }
@@ -271,6 +275,10 @@ li {
 
 .top-115 {
   top: 115px;
+}
+
+.top-130 {
+  top: 130px;
 }
 
 .right-0 {
@@ -909,6 +917,10 @@ footer .terminos-y-condiciones .modal-body {
   justify-content: flex-end;
   position: absolute;
 }
+.option-content .btn-option-image .option-image-object {
+  width: 9.375em;
+  /* 150/16 */
+}
 .option-content .option-content-btn {
   margin: 1.25em auto;
   /* 20/16 */
@@ -1336,6 +1348,11 @@ footer .terminos-y-condiciones .modal-body {
   background-image: url("../src/assets/images/background/background-amistad-desktop.jpg");
 }
 
+.active-amistad {
+  background-color: var(--color-fucsia) !important;
+  outline: var(--color-fucsia);
+}
+
 /*
  * Fin de amistad.html
  *
@@ -1534,7 +1551,17 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-amistad-2 .desaphilip .option-content .btn-option, .body-desaphilip-diversion .desaphilip .option-content .btn-option,
 .body-desaphilip-diversion-2 .desaphilip .option-content .btn-option, .body-desaphilip-autenticidad .desaphilip .option-content .btn-option,
 .body-desaphilip-autenticidad-2 .desaphilip .option-content .btn-option {
-    width: 15em;
+    width: 10em;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .body-desaphilip .desaphilip .option-content .option-content-btn, .body-desaphilip-home .desaphilip .option-content .option-content-btn,
+.body-galeria-de-stickers .desaphilip .option-content .option-content-btn, .body-desaphilip-musica .desaphilip .option-content .option-content-btn,
+.body-desaphilip-musica-2 .desaphilip .option-content .option-content-btn, .body-desaphilip-amistad .desaphilip .option-content .option-content-btn,
+.body-desaphilip-amistad-2 .desaphilip .option-content .option-content-btn, .body-desaphilip-diversion .desaphilip .option-content .option-content-btn,
+.body-desaphilip-diversion-2 .desaphilip .option-content .option-content-btn, .body-desaphilip-autenticidad .desaphilip .option-content .option-content-btn,
+.body-desaphilip-autenticidad-2 .desaphilip .option-content .option-content-btn {
+    margin: 3em auto;
   }
   .body-desaphilip .desaphilip .btn-option-image, .body-desaphilip-home .desaphilip .btn-option-image,
 .body-galeria-de-stickers .desaphilip .btn-option-image, .body-desaphilip-musica .desaphilip .btn-option-image,
@@ -1542,16 +1569,16 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-amistad-2 .desaphilip .btn-option-image, .body-desaphilip-diversion .desaphilip .btn-option-image,
 .body-desaphilip-diversion-2 .desaphilip .btn-option-image, .body-desaphilip-autenticidad .desaphilip .btn-option-image,
 .body-desaphilip-autenticidad-2 .desaphilip .btn-option-image {
-    right: -45px;
-    top: 65px;
+    right: 10px;
+    top: 45px;
   }
-  .body-desaphilip .desaphilip .btn-option-image img, .body-desaphilip-home .desaphilip .btn-option-image img,
-.body-galeria-de-stickers .desaphilip .btn-option-image img, .body-desaphilip-musica .desaphilip .btn-option-image img,
-.body-desaphilip-musica-2 .desaphilip .btn-option-image img, .body-desaphilip-amistad .desaphilip .btn-option-image img,
-.body-desaphilip-amistad-2 .desaphilip .btn-option-image img, .body-desaphilip-diversion .desaphilip .btn-option-image img,
-.body-desaphilip-diversion-2 .desaphilip .btn-option-image img, .body-desaphilip-autenticidad .desaphilip .btn-option-image img,
-.body-desaphilip-autenticidad-2 .desaphilip .btn-option-image img {
-    width: 60%;
+  .body-desaphilip .desaphilip .btn-option-image .option-image-object, .body-desaphilip-home .desaphilip .btn-option-image .option-image-object,
+.body-galeria-de-stickers .desaphilip .btn-option-image .option-image-object, .body-desaphilip-musica .desaphilip .btn-option-image .option-image-object,
+.body-desaphilip-musica-2 .desaphilip .btn-option-image .option-image-object, .body-desaphilip-amistad .desaphilip .btn-option-image .option-image-object,
+.body-desaphilip-amistad-2 .desaphilip .btn-option-image .option-image-object, .body-desaphilip-diversion .desaphilip .btn-option-image .option-image-object,
+.body-desaphilip-diversion-2 .desaphilip .btn-option-image .option-image-object, .body-desaphilip-autenticidad .desaphilip .btn-option-image .option-image-object,
+.body-desaphilip-autenticidad-2 .desaphilip .btn-option-image .option-image-object {
+    width: 5em;
   }
   .body-desaphilip .desaphilip .btn-option-icon, .body-desaphilip-home .desaphilip .btn-option-icon,
 .body-galeria-de-stickers .desaphilip .btn-option-icon, .body-desaphilip-musica .desaphilip .btn-option-icon,
@@ -1560,7 +1587,7 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-diversion-2 .desaphilip .btn-option-icon, .body-desaphilip-autenticidad .desaphilip .btn-option-icon,
 .body-desaphilip-autenticidad-2 .desaphilip .btn-option-icon {
     left: 60px;
-    top: 80px;
+    top: 110px;
   }
   .body-desaphilip footer .footer-content, .body-desaphilip-home footer .footer-content,
 .body-galeria-de-stickers footer .footer-content, .body-desaphilip-musica footer .footer-content,

@@ -4,15 +4,26 @@ $('#cuestionarioDesaphilipAmistadA .respuesta-01-a, .respuesta-01-b').on('click'
     $(this).addClass('active-amistad');
 });
 
-if ( window.innerWidth <= '360px' ) {
+if ( window.screen.availWidth >= 360 && window.screen.availWidth <= 1060) {
     $( ".respuesta-01-a" ).click(function() {
-    $( ".fa-check" ).show( "slow" );
-    $( "#emojicAmistadRePorAhiMobile" ).show( "slow" );
+    $( ".fa-check" ).show();
+    $( "#emojicAmistadRePorAhiMobile" ).show();
     });
-}else {
+
+    $( ".respuesta-02-b" ).click(function() {
+    $( ".fa-times" ).show();
+    $( "#emojicAmistadMePareceQueNoDaMobile" ).show();
+    });
+
+}else if ( window.screen.availWidth > 1060 ) {
     $( ".respuesta-01-a" ).click(function() {
-    $( ".fa-check" ).show( "slow" );
-    $( "#emojicAmistadRePorAhiDesktop" ).show( "slow" );
+    $( ".fa-check" ).show();
+    $( "#emojicAmistadRePorAhiDesktop" ).show();
+    });
+
+    $( ".respuesta-02-b" ).click(function() {
+    $( ".fa-times" ).show();
+    $( "#emojicAmistadMePareceQueNoDaDesktop" ).show();
     });
 }
 

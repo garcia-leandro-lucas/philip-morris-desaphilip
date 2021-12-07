@@ -1563,31 +1563,57 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-autenticidad-2 .desaphilip .option-content .option-content-btn {
     margin: 3em auto;
   }
-  .body-desaphilip .desaphilip .btn-option-image, .body-desaphilip-home .desaphilip .btn-option-image,
-.body-galeria-de-stickers .desaphilip .btn-option-image, .body-desaphilip-musica .desaphilip .btn-option-image,
-.body-desaphilip-musica-2 .desaphilip .btn-option-image, .body-desaphilip-amistad .desaphilip .btn-option-image,
-.body-desaphilip-amistad-2 .desaphilip .btn-option-image, .body-desaphilip-diversion .desaphilip .btn-option-image,
-.body-desaphilip-diversion-2 .desaphilip .btn-option-image, .body-desaphilip-autenticidad .desaphilip .btn-option-image,
-.body-desaphilip-autenticidad-2 .desaphilip .btn-option-image {
+  .body-desaphilip .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-home .desaphilip #pregunta01 .btn-option-image,
+.body-galeria-de-stickers .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-musica .desaphilip #pregunta01 .btn-option-image,
+.body-desaphilip-musica-2 .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-amistad .desaphilip #pregunta01 .btn-option-image,
+.body-desaphilip-amistad-2 .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-diversion .desaphilip #pregunta01 .btn-option-image,
+.body-desaphilip-diversion-2 .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-autenticidad .desaphilip #pregunta01 .btn-option-image,
+.body-desaphilip-autenticidad-2 .desaphilip #pregunta01 .btn-option-image {
     right: 10px;
     top: 45px;
   }
-  .body-desaphilip .desaphilip .btn-option-image .option-image-object, .body-desaphilip-home .desaphilip .btn-option-image .option-image-object,
-.body-galeria-de-stickers .desaphilip .btn-option-image .option-image-object, .body-desaphilip-musica .desaphilip .btn-option-image .option-image-object,
-.body-desaphilip-musica-2 .desaphilip .btn-option-image .option-image-object, .body-desaphilip-amistad .desaphilip .btn-option-image .option-image-object,
-.body-desaphilip-amistad-2 .desaphilip .btn-option-image .option-image-object, .body-desaphilip-diversion .desaphilip .btn-option-image .option-image-object,
-.body-desaphilip-diversion-2 .desaphilip .btn-option-image .option-image-object, .body-desaphilip-autenticidad .desaphilip .btn-option-image .option-image-object,
-.body-desaphilip-autenticidad-2 .desaphilip .btn-option-image .option-image-object {
+  .body-desaphilip .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-home .desaphilip #pregunta01 .btn-option-image .option-image-object,
+.body-galeria-de-stickers .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-musica .desaphilip #pregunta01 .btn-option-image .option-image-object,
+.body-desaphilip-musica-2 .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-amistad .desaphilip #pregunta01 .btn-option-image .option-image-object,
+.body-desaphilip-amistad-2 .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-diversion .desaphilip #pregunta01 .btn-option-image .option-image-object,
+.body-desaphilip-diversion-2 .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-autenticidad .desaphilip #pregunta01 .btn-option-image .option-image-object,
+.body-desaphilip-autenticidad-2 .desaphilip #pregunta01 .btn-option-image .option-image-object {
     width: 5em;
   }
-  .body-desaphilip .desaphilip .btn-option-icon, .body-desaphilip-home .desaphilip .btn-option-icon,
-.body-galeria-de-stickers .desaphilip .btn-option-icon, .body-desaphilip-musica .desaphilip .btn-option-icon,
-.body-desaphilip-musica-2 .desaphilip .btn-option-icon, .body-desaphilip-amistad .desaphilip .btn-option-icon,
-.body-desaphilip-amistad-2 .desaphilip .btn-option-icon, .body-desaphilip-diversion .desaphilip .btn-option-icon,
-.body-desaphilip-diversion-2 .desaphilip .btn-option-icon, .body-desaphilip-autenticidad .desaphilip .btn-option-icon,
-.body-desaphilip-autenticidad-2 .desaphilip .btn-option-icon {
+  .body-desaphilip .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-home .desaphilip #pregunta01 .btn-option-icon,
+.body-galeria-de-stickers .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-musica .desaphilip #pregunta01 .btn-option-icon,
+.body-desaphilip-musica-2 .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-amistad .desaphilip #pregunta01 .btn-option-icon,
+.body-desaphilip-amistad-2 .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-diversion .desaphilip #pregunta01 .btn-option-icon,
+.body-desaphilip-diversion-2 .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-autenticidad .desaphilip #pregunta01 .btn-option-icon,
+.body-desaphilip-autenticidad-2 .desaphilip #pregunta01 .btn-option-icon {
     left: 60px;
     top: 110px;
+  }
+  .body-desaphilip .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-home .desaphilip #pregunta02 .btn-option-image,
+.body-galeria-de-stickers .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-musica .desaphilip #pregunta02 .btn-option-image,
+.body-desaphilip-musica-2 .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-amistad .desaphilip #pregunta02 .btn-option-image,
+.body-desaphilip-amistad-2 .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-diversion .desaphilip #pregunta02 .btn-option-image,
+.body-desaphilip-diversion-2 .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-autenticidad .desaphilip #pregunta02 .btn-option-image,
+.body-desaphilip-autenticidad-2 .desaphilip #pregunta02 .btn-option-image {
+    right: 10px;
+    bottom: 15px;
+  }
+  .body-desaphilip .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-home .desaphilip #pregunta02 .btn-option-image .option-image-object,
+.body-galeria-de-stickers .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-musica .desaphilip #pregunta02 .btn-option-image .option-image-object,
+.body-desaphilip-musica-2 .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-amistad .desaphilip #pregunta02 .btn-option-image .option-image-object,
+.body-desaphilip-amistad-2 .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-diversion .desaphilip #pregunta02 .btn-option-image .option-image-object,
+.body-desaphilip-diversion-2 .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-autenticidad .desaphilip #pregunta02 .btn-option-image .option-image-object,
+.body-desaphilip-autenticidad-2 .desaphilip #pregunta02 .btn-option-image .option-image-object {
+    width: 5em;
+  }
+  .body-desaphilip .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-home .desaphilip #pregunta02 .btn-option-icon,
+.body-galeria-de-stickers .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-musica .desaphilip #pregunta02 .btn-option-icon,
+.body-desaphilip-musica-2 .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-amistad .desaphilip #pregunta02 .btn-option-icon,
+.body-desaphilip-amistad-2 .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-diversion .desaphilip #pregunta02 .btn-option-icon,
+.body-desaphilip-diversion-2 .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-autenticidad .desaphilip #pregunta02 .btn-option-icon,
+.body-desaphilip-autenticidad-2 .desaphilip #pregunta02 .btn-option-icon {
+    left: 60px;
+    top: 200px;
   }
   .body-desaphilip footer .footer-content, .body-desaphilip-home footer .footer-content,
 .body-galeria-de-stickers footer .footer-content, .body-desaphilip-musica footer .footer-content,

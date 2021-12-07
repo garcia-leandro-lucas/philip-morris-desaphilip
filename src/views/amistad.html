@@ -10,6 +10,12 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- Css -->
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
 
@@ -104,7 +110,7 @@
                 </div>
                 
                 <!-- Pregunta 1 -->
-                <div class="option-content margin-t-30">
+                <div class="option-content margin-t-30" id="pregunta01">
                     <div class="option-text">
                         <h2 class="texto-fucsia texto-ombudsman texto-center text-pregunta-desaphilip-2-6 fuente-heredada interlineado-09">Cuando corta tu amigx y su ex <br>te agrega en insta.</h2>
                     </div>
@@ -115,26 +121,27 @@
                         <button class="btn-option background-blanco border-fucsia mayusculas texto-negro texto-roboto-r margin-b-10 respuesta-01-b">Seguís, llenás de fueguitos y dale que va.</button>
                     </div>
                     <div class="btn-option-image top-30 right-0">
-                        <object class="option-image-object display-none-mobile" id="emojicAmistadRePorAhiDesktop" type="image/svg+xml" data="../../src/assets/images/iconos/emojic_amistad_re_por_ahi_desktop.svg" style="display: none"></object>
+                        <object class="option-image-object display-none-mobile display-none-tablet" id="emojicAmistadRePorAhiDesktop" type="image/svg+xml" data="../../src/assets/images/iconos/emojic_amistad_re_por_ahi_desktop.svg" style="display: none;"></object>
                         
-                        <object class="option-image-object display-none-desktop" id="emojicAmistadRePorAhiMobile" type="image/svg+xml" data="../../src/assets/images/iconos/emojic_amistad_re_por_ahi_mobile.svg" style="display: none"></object>
+                        <object class="option-image-object display-none-desktop" id="emojicAmistadRePorAhiMobile" type="image/svg+xml" data="../../src/assets/images/iconos/emojic_amistad_re_por_ahi_mobile.svg" style="display: none;"></object>
                     </div>
                 </div>
                 <!-- Fin de Pregunta 1 -->
+
                 <!-- Pregunta 2 -->
-                <div class="option-content margin-t-30">
+                <div class="option-content margin-t-30" id="pregunta02">
                     <div class="option-text">
                         <h2 class="texto-fucsia texto-ombudsman texto-center text-pregunta-desaphilip-2-6 fuente-heredada interlineado-09">Cuando corta tu amigx tiene que bajarse <br class="display-none-mobile">de las vacaciones...</h2>
                     </div>
-                    <i class="fas fa-times texto-blanco btn-option-icon top-130"></i>
+                    <i class="fas fa-times texto-blanco btn-option-icon top-130" style="display: none;"></i>
                     <div class="option-content-btn margin-t-20" id="cuestionarioDesaphilipAmistadB">
                         <button class="btn-option background-blanco border-fucsia mayusculas texto-negro texto-roboto-r margin-b-10 respuesta-02-a">recalculamos. vamos tod@s o no va nadie.</button>
                         <br>
                         <button class="btn-option background-blanco border-fucsia mayusculas texto-negro texto-roboto-r margin-b-10 respuesta-02-b">¡ya fue! qye lo mire por insta.</button>
                     </div>
                     <div class="btn-option-image top-80 right-0">
-                        <object class="option-image-object display-none-mobile" type="image/svg+xml" data="../../src/assets/images/iconos/emojic_amistad_me_parece_que_no_da_desktop.svg"></object>
-                        <object class="option-image-object display-none-desktop" type="image/svg+xml" data="../../src/assets/images/iconos/emojic_amistad_me_parece_que_no_da_mobile.svg"></object>
+                        <object class="option-image-object display-none-mobile display-none-tablet" id="emojicAmistadMePareceQueNoDaDesktop" type="image/svg+xml" data="../../src/assets/images/iconos/emojic_amistad_me_parece_que_no_da_desktop.svg" style="display: none;"></object>
+                        <object class="option-image-object display-none-desktop" id="emojicAmistadMePareceQueNoDaMobile" type="image/svg+xml" data="../../src/assets/images/iconos/emojic_amistad_me_parece_que_no_da_mobile.svg" style="display: none;"></object>
                     </div>
                 </div>
                 <!-- Fin de Pregunta 2 -->
@@ -412,17 +419,26 @@
 <!-- Fin Popup, al presionar ver terminos y condiciones -->
 </footer>
 
-<!-- Script bootstrap -->
+<!-- script bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-<!-- Script de respuestas -->
-<script src="../../js/rta-desaphilip.js"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- <script>
-$( ".respuesta-01-a" ).click(function() {
-  $( ".fa-check, #emojicAmistadRePorAhi" ).show( "slow" );
-});
-</script> -->
+<!-- Funcion de animaciones con MySwiper -->
+<script src="../../js/mi-swiper.js"></script>
+
+<!-- Libreria Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- script AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Inicialización de AOS -->
+<script>AOS.init();</script>
+
+<!-- Apertura y cierre de popUp con instrucciones. Solo se muestra en viewport < 768px -->
+<script src="../../js/pop-up-mobile.js"></script>
 
 </body>
 </html>

@@ -483,41 +483,23 @@
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Funcion de animaciones con MySwiper -->
+<script src="../../js/mi-swiper.js"></script>
+
+<!-- Libreria Jquery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <!-- script AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Inicialización de AOS -->
-    <script>AOS.init();</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        effect: "fade",
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+<!-- Inicialización de AOS -->
+<script>AOS.init();</script>
 
-</script>
+<!-- Apertura y cierre de popUp con instrucciones. Solo se muestra en viewport < 768px -->
+<script src="../../js/pop-up-mobile.js"></script>
+    
 
-<script>
-    $(document).ready(function() {
-        $("#popDeInstruccionesMobile").delay(2000).fadeIn();
-        $('#popDeInstruccionesMobileClose').click(function(e) // You are clicking the close button
-            {
-                $('#popDeInstruccionesMobile').fadeOut(); // Now the pop up is hiden.
-            });
-        $('#popDeInstruccionesMobile').click(function(e) {
-            $('#popDeInstruccionesMobile').fadeOut();
-        });
-    });
-</script>
 
 </body>
 </html>

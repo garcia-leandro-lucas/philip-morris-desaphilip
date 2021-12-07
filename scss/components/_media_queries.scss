@@ -84,19 +84,39 @@
                 }
             }
 
-            .btn-option-image {
-                right: 10px;
-                top: 45px;
+            #pregunta01 {
+                .btn-option-image {
+                    right: 10px;
+                    top: 45px;
 
                 .option-image-object {
                     width: 5em;
                 }
             }
 
-            .btn-option-icon {
-                left: 60px;
-                top: 110px;
-            }        
+                .btn-option-icon {
+                    left: 60px;
+                    top: 110px;
+                }
+            }
+
+            #pregunta02 {
+                .btn-option-image {
+                    right: 10px;
+                    bottom: 15px;
+
+                .option-image-object {
+                    width: 5em;
+                }
+            }
+
+                .btn-option-icon {
+                    left: 60px;
+                    top: 200px;
+                }
+            }
+
+                    
         }
 
         footer {

@@ -1308,33 +1308,6 @@ footer .terminos-y-condiciones .modal-body {
   background-image: url("../src/assets/images/background/background-musica-desktop.jpg");
 }
 
-.body-desaphilip-musica .respuesta {
-  width: 30%;
-  margin: 1.25em auto;
-  /* 20/16 */
-}
-.body-desaphilip-musica .respuesta-content {
-  width: 70%;
-  margin: auto;
-}
-.body-desaphilip-musica .respuesta-content input {
-  padding: 0.625em 0em;
-  /* 10/16 */
-  /* 0/16 */
-  width: 100%;
-  margin: auto;
-  text-align: center;
-}
-.body-desaphilip-musica .respuesta-content .respuesta-input {
-  position: relative;
-}
-.body-desaphilip-musica .respuesta-content .respuesta-icono {
-  position: absolute;
-  right: 11px;
-  top: 5px;
-  font-size: 1.5em;
-}
-
 /*
  * Fin de musica.html
  *
@@ -1351,6 +1324,33 @@ footer .terminos-y-condiciones .modal-body {
 .active-amistad {
   background-color: var(--color-fucsia) !important;
   outline: var(--color-fucsia);
+}
+
+.body-desaphilip-amistad .respuesta {
+  width: 30%;
+  margin: 1.25em auto;
+  /* 20/16 */
+}
+.body-desaphilip-amistad .respuesta-content {
+  width: 70%;
+  margin: auto;
+}
+.body-desaphilip-amistad .respuesta-content input {
+  padding: 0.625em 0em;
+  /* 10/16 */
+  /* 0/16 */
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.body-desaphilip-amistad .respuesta-content .respuesta-input {
+  position: relative;
+}
+.body-desaphilip-amistad .respuesta-content .respuesta-icono {
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  font-size: 1.5em;
 }
 
 /*
@@ -1401,6 +1401,11 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-autenticidad,
 .body-desaphilip-autenticidad-2 {
   background-image: url("../src/assets/images/background/background-autenticidad-desktop.jpg");
+}
+
+.active-autenticidad {
+  background-color: var(--color-amarillo) !important;
+  outline: var(--color-amarillo);
 }
 
 /*
@@ -1536,84 +1541,6 @@ footer .terminos-y-condiciones .modal-body {
     font-size: 2.5rem;
     padding-bottom: 0.625em;
     /* 10/16 */
-  }
-  .body-desaphilip .desaphilip .option-content, .body-desaphilip-home .desaphilip .option-content,
-.body-galeria-de-stickers .desaphilip .option-content, .body-desaphilip-musica .desaphilip .option-content,
-.body-desaphilip-musica-2 .desaphilip .option-content, .body-desaphilip-amistad .desaphilip .option-content,
-.body-desaphilip-amistad-2 .desaphilip .option-content, .body-desaphilip-diversion .desaphilip .option-content,
-.body-desaphilip-diversion-2 .desaphilip .option-content, .body-desaphilip-autenticidad .desaphilip .option-content,
-.body-desaphilip-autenticidad-2 .desaphilip .option-content {
-    width: 100%;
-  }
-  .body-desaphilip .desaphilip .option-content .btn-option, .body-desaphilip-home .desaphilip .option-content .btn-option,
-.body-galeria-de-stickers .desaphilip .option-content .btn-option, .body-desaphilip-musica .desaphilip .option-content .btn-option,
-.body-desaphilip-musica-2 .desaphilip .option-content .btn-option, .body-desaphilip-amistad .desaphilip .option-content .btn-option,
-.body-desaphilip-amistad-2 .desaphilip .option-content .btn-option, .body-desaphilip-diversion .desaphilip .option-content .btn-option,
-.body-desaphilip-diversion-2 .desaphilip .option-content .btn-option, .body-desaphilip-autenticidad .desaphilip .option-content .btn-option,
-.body-desaphilip-autenticidad-2 .desaphilip .option-content .btn-option {
-    width: 10em;
-    font-size: 12px;
-    padding: 10px;
-  }
-  .body-desaphilip .desaphilip .option-content .option-content-btn, .body-desaphilip-home .desaphilip .option-content .option-content-btn,
-.body-galeria-de-stickers .desaphilip .option-content .option-content-btn, .body-desaphilip-musica .desaphilip .option-content .option-content-btn,
-.body-desaphilip-musica-2 .desaphilip .option-content .option-content-btn, .body-desaphilip-amistad .desaphilip .option-content .option-content-btn,
-.body-desaphilip-amistad-2 .desaphilip .option-content .option-content-btn, .body-desaphilip-diversion .desaphilip .option-content .option-content-btn,
-.body-desaphilip-diversion-2 .desaphilip .option-content .option-content-btn, .body-desaphilip-autenticidad .desaphilip .option-content .option-content-btn,
-.body-desaphilip-autenticidad-2 .desaphilip .option-content .option-content-btn {
-    margin: 3em auto;
-  }
-  .body-desaphilip .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-home .desaphilip #pregunta01 .btn-option-image,
-.body-galeria-de-stickers .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-musica .desaphilip #pregunta01 .btn-option-image,
-.body-desaphilip-musica-2 .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-amistad .desaphilip #pregunta01 .btn-option-image,
-.body-desaphilip-amistad-2 .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-diversion .desaphilip #pregunta01 .btn-option-image,
-.body-desaphilip-diversion-2 .desaphilip #pregunta01 .btn-option-image, .body-desaphilip-autenticidad .desaphilip #pregunta01 .btn-option-image,
-.body-desaphilip-autenticidad-2 .desaphilip #pregunta01 .btn-option-image {
-    right: 10px;
-    top: 45px;
-  }
-  .body-desaphilip .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-home .desaphilip #pregunta01 .btn-option-image .option-image-object,
-.body-galeria-de-stickers .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-musica .desaphilip #pregunta01 .btn-option-image .option-image-object,
-.body-desaphilip-musica-2 .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-amistad .desaphilip #pregunta01 .btn-option-image .option-image-object,
-.body-desaphilip-amistad-2 .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-diversion .desaphilip #pregunta01 .btn-option-image .option-image-object,
-.body-desaphilip-diversion-2 .desaphilip #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-autenticidad .desaphilip #pregunta01 .btn-option-image .option-image-object,
-.body-desaphilip-autenticidad-2 .desaphilip #pregunta01 .btn-option-image .option-image-object {
-    width: 5em;
-  }
-  .body-desaphilip .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-home .desaphilip #pregunta01 .btn-option-icon,
-.body-galeria-de-stickers .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-musica .desaphilip #pregunta01 .btn-option-icon,
-.body-desaphilip-musica-2 .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-amistad .desaphilip #pregunta01 .btn-option-icon,
-.body-desaphilip-amistad-2 .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-diversion .desaphilip #pregunta01 .btn-option-icon,
-.body-desaphilip-diversion-2 .desaphilip #pregunta01 .btn-option-icon, .body-desaphilip-autenticidad .desaphilip #pregunta01 .btn-option-icon,
-.body-desaphilip-autenticidad-2 .desaphilip #pregunta01 .btn-option-icon {
-    left: 60px;
-    top: 110px;
-  }
-  .body-desaphilip .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-home .desaphilip #pregunta02 .btn-option-image,
-.body-galeria-de-stickers .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-musica .desaphilip #pregunta02 .btn-option-image,
-.body-desaphilip-musica-2 .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-amistad .desaphilip #pregunta02 .btn-option-image,
-.body-desaphilip-amistad-2 .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-diversion .desaphilip #pregunta02 .btn-option-image,
-.body-desaphilip-diversion-2 .desaphilip #pregunta02 .btn-option-image, .body-desaphilip-autenticidad .desaphilip #pregunta02 .btn-option-image,
-.body-desaphilip-autenticidad-2 .desaphilip #pregunta02 .btn-option-image {
-    right: 10px;
-    bottom: 15px;
-  }
-  .body-desaphilip .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-home .desaphilip #pregunta02 .btn-option-image .option-image-object,
-.body-galeria-de-stickers .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-musica .desaphilip #pregunta02 .btn-option-image .option-image-object,
-.body-desaphilip-musica-2 .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-amistad .desaphilip #pregunta02 .btn-option-image .option-image-object,
-.body-desaphilip-amistad-2 .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-diversion .desaphilip #pregunta02 .btn-option-image .option-image-object,
-.body-desaphilip-diversion-2 .desaphilip #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-autenticidad .desaphilip #pregunta02 .btn-option-image .option-image-object,
-.body-desaphilip-autenticidad-2 .desaphilip #pregunta02 .btn-option-image .option-image-object {
-    width: 5em;
-  }
-  .body-desaphilip .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-home .desaphilip #pregunta02 .btn-option-icon,
-.body-galeria-de-stickers .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-musica .desaphilip #pregunta02 .btn-option-icon,
-.body-desaphilip-musica-2 .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-amistad .desaphilip #pregunta02 .btn-option-icon,
-.body-desaphilip-amistad-2 .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-diversion .desaphilip #pregunta02 .btn-option-icon,
-.body-desaphilip-diversion-2 .desaphilip #pregunta02 .btn-option-icon, .body-desaphilip-autenticidad .desaphilip #pregunta02 .btn-option-icon,
-.body-desaphilip-autenticidad-2 .desaphilip #pregunta02 .btn-option-icon {
-    left: 60px;
-    top: 200px;
   }
   .body-desaphilip footer .footer-content, .body-desaphilip-home footer .footer-content,
 .body-galeria-de-stickers footer .footer-content, .body-desaphilip-musica footer .footer-content,
@@ -1860,6 +1787,40 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-diversion-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo, .body-desaphilip-autenticidad footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo,
 .body-desaphilip-autenticidad-2 footer #descubrir .modal-dialog .modal-content .pop-up-footer .slide-content .desafios-premios .desafios-premios-content .desafios-premios-content-image .premio-completo {
     width: 15rem;
+  }
+
+  .body-desaphilip-amistad .option-content, .body-desaphilip-autenticidad .option-content {
+    width: 100%;
+  }
+  .body-desaphilip-amistad .option-content .btn-option, .body-desaphilip-autenticidad .option-content .btn-option {
+    width: 10em;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .body-desaphilip-amistad .option-content .option-content-btn, .body-desaphilip-autenticidad .option-content .option-content-btn {
+    margin: 3em auto;
+  }
+  .body-desaphilip-amistad #pregunta01 .btn-option-image, .body-desaphilip-autenticidad #pregunta01 .btn-option-image {
+    right: 10px;
+    top: 45px;
+  }
+  .body-desaphilip-amistad #pregunta01 .btn-option-image .option-image-object, .body-desaphilip-autenticidad #pregunta01 .btn-option-image .option-image-object {
+    width: 5em;
+  }
+  .body-desaphilip-amistad #pregunta01 .btn-option-icon, .body-desaphilip-autenticidad #pregunta01 .btn-option-icon {
+    left: 60px;
+    top: 110px;
+  }
+  .body-desaphilip-amistad #pregunta02 .btn-option-image, .body-desaphilip-autenticidad #pregunta02 .btn-option-image {
+    right: 10px;
+    bottom: 15px;
+  }
+  .body-desaphilip-amistad #pregunta02 .btn-option-image .option-image-object, .body-desaphilip-autenticidad #pregunta02 .btn-option-image .option-image-object {
+    width: 5em;
+  }
+  .body-desaphilip-amistad #pregunta02 .btn-option-icon, .body-desaphilip-autenticidad #pregunta02 .btn-option-icon {
+    left: 60px;
+    top: 200px;
   }
 
   /*

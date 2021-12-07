@@ -1,6 +1,19 @@
+
+/* 
+ * 
+ * Desaphilip Amistad
+ *
+ */
+
 /* respuestas a Pregunta 1 */
 $('#cuestionarioDesaphilipAmistadA .respuesta-01-a, .respuesta-01-b').on('click', function() {
     $('#cuestionarioDesaphilipAmistadA .respuesta-01-a, .respuesta-01-b').removeClass('active-amistad');
+    $(this).addClass('active-amistad');
+});
+
+/* respuestas a Pregunta 2 */
+$('#cuestionarioDesaphilipAmistadB .respuesta-02-a, .respuesta-02-b').on('click', function() {
+    $('#cuestionarioDesaphilipAmistadB .respuesta-02-a, .respuesta-02-b').removeClass('active-amistad');
     $(this).addClass('active-amistad');
 });
 
@@ -26,9 +39,3 @@ if ( window.screen.availWidth >= 360 && window.screen.availWidth <= 1060) {
     $( "#emojicAmistadMePareceQueNoDaDesktop" ).show();
     });
 }
-
-/* respuestas a Pregunta 2 */
-$('#cuestionarioDesaphilipAmistadB .respuesta-02-a, .respuesta-02-b').on('click', function() {
-    $('#cuestionarioDesaphilipAmistadB .respuesta-02-a, .respuesta-02-b').removeClass('active-amistad');
-    $(this).addClass('active-amistad');
-});

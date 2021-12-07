@@ -11,40 +11,6 @@
     @extend.body-desaphilip;
 }
 
-.body-desaphilip-musica {
-
-    .respuesta {
-        @include sizes-w(30%);
-        @include margin(1.25em auto); /* 20/16 */
-    }
-
-    .respuesta-content {
-        @include sizes-w(70%);
-        @include margin(auto);
-    }
-
-    .respuesta-content {
-
-        input {
-            @include padding(0.625em 0em); /* 10/16 */ /* 0/16 */
-            @include sizes-w(100%);
-            @include margin(auto);
-            text-align: center;
-        }
-
-        .respuesta-input {
-            position: relative;
-        }
-
-        .respuesta-icono {
-            position: absolute;
-            right: 11px;
-            top: 5px;
-            font-size: 1.5em;
-        }
-    }
-}
-
 /*
  * Fin de musica.html
  *

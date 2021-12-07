@@ -69,54 +69,6 @@
                 font-size: 2.5rem;
                 padding-bottom: 0.625em; /* 10/16 */
             }
-
-            .option-content {
-                width: 100%;;
-
-                .btn-option {
-                    width: 10em;
-                    font-size: 12px;
-                    padding: 10px;
-                }
-
-                .option-content-btn {
-                    margin: 3em auto;
-                }
-            }
-
-            #pregunta01 {
-                .btn-option-image {
-                    right: 10px;
-                    top: 45px;
-
-                .option-image-object {
-                    width: 5em;
-                }
-            }
-
-                .btn-option-icon {
-                    left: 60px;
-                    top: 110px;
-                }
-            }
-
-            #pregunta02 {
-                .btn-option-image {
-                    right: 10px;
-                    bottom: 15px;
-
-                .option-image-object {
-                    width: 5em;
-                }
-            }
-
-                .btn-option-icon {
-                    left: 60px;
-                    top: 200px;
-                }
-            }
-
-                    
         }
 
         footer {
@@ -273,8 +225,53 @@
     }
 }
 
+.body-desaphilip-amistad, .body-desaphilip-autenticidad {
+        .option-content {
+                width: 100%;;
 
+                .btn-option {
+                    width: 10em;
+                    font-size: 12px;
+                    padding: 10px;
+                }
 
+                .option-content-btn {
+                    margin: 3em auto;
+                }
+            }
+
+            #pregunta01 {
+                .btn-option-image {
+                    right: 10px;
+                    top: 45px;
+
+                .option-image-object {
+                    width: 5em;
+                }
+            }
+
+                .btn-option-icon {
+                    left: 60px;
+                    top: 110px;
+                }
+            }
+
+            #pregunta02 {
+                .btn-option-image {
+                    right: 10px;
+                    bottom: 15px;
+
+                .option-image-object {
+                    width: 5em;
+                }
+            }
+
+                .btn-option-icon {
+                    left: 60px;
+                    top: 200px;
+                }
+            }
+    }
 
     /*
      * Inicio de index.html
@@ -410,7 +407,6 @@
     .body-desaphilip-amistad-2 {
         background-image: url('../src/assets/images/background/background-amistad-mobile.jpg');
     }
-
 
     /*
      * Fin de amistad.html

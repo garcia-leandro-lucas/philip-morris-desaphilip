@@ -31,6 +31,24 @@
 
 <body class="body-desaphilip body-desaphilip-diversion">
 
+    <style>
+        .pieza {
+            background: url(https://santinosocialmedia.com/wp-content/uploads/2020/09/1263106_1376304773845_full.jpg);
+            /*background: url(../assets/images/rompecabezas/caballo.jpg);*/
+            transition: .3s ease-in-out;
+            -moz-transition: .3s ease-in-out;
+            -webkit-transition: .3s ease-in-out;
+            -o-transition: .3s ease-in-out;
+            cursor: pointer;
+        }
+
+
+        #posiciones {
+            display: none;
+        }
+
+    </style>
+
     <header>
         <nav class="menu-principal navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -108,9 +126,18 @@
 
             <div>
                 <h2 class="texto-azul texto-ombudsman texto-center text-pregunta-desaphilip-2-6 fuente-heredada interlineado-09">Poné las piezas en su lugar y armá el meme.</h2>
+                <div id='conf'>
+                                <select id='piezas'>
+                                <option value='9'>9</option>
+                                </select>
+                                <input type='button' id='barajar' value='Barajar' />
+                            </div>
                 <div class="rompecabezas texto-center background-gris-medio border-rojo">
-                    <div class="rompecabezas-imagen">
-                        <div class="image">
+                    <div class="rompecabezas-imagen" id="rompecabezasImagen">
+                        <div id='content' align='center'>
+                            
+                        </div>
+                        <!-- <div class="image">
                             <img src="../assets/images/rompecabezas/perro/image_9.jpg" alt="Pieza del rompecabezas 9">
                         </div>
                         <div class="image">
@@ -136,7 +163,7 @@
                         </div>
                         <div class="image">
                             <img src="../assets/images/rompecabezas/perro/image_6.jpg" alt="Pieza del rompecabezas 6">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -435,6 +462,8 @@
 
 <!-- Apertura y cierre de popUp con instrucciones. Solo se muestra en viewport < 768px -->
 <script src="../../js/pop-up-mobile.js"></script>
+
+<script src="../../js/rompecabezas.js"></script>
 
 
 </body>

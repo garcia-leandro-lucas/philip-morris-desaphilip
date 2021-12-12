@@ -1308,6 +1308,35 @@ footer .terminos-y-condiciones .modal-body {
   background-image: url("../src/assets/images/background/background-musica-desktop.jpg");
 }
 
+.body-desaphilip-musica .respuesta {
+  width: 34.0625em;
+  /* 545/16 */
+  margin: 1.25em auto;
+  /* 20/16 */
+}
+.body-desaphilip-musica .respuesta-content {
+  width: 23.75em;
+  /* 380/16 */
+  margin: auto;
+}
+.body-desaphilip-musica .respuesta-content input {
+  padding: 0.625em 0em;
+  /* 10/16 */
+  /* 0/16 */
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.body-desaphilip-musica .respuesta-content .respuesta-input {
+  position: relative;
+}
+.body-desaphilip-musica .respuesta-content .respuesta-icono {
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  font-size: 1.5em;
+}
+
 /*
  * Fin de musica.html
  *
@@ -1903,14 +1932,6 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-musica-2 {
     background-image: url("../src/assets/images/background/background-musica-mobile.jpg");
   }
-  .body-desaphilip-musica .respuesta,
-.body-desaphilip-musica-2 .respuesta {
-    width: 100%;
-  }
-  .body-desaphilip-musica .respuesta .respuesta-content,
-.body-desaphilip-musica-2 .respuesta .respuesta-content {
-    width: 90%;
-  }
 
   /*
    * Fin de musica.html
@@ -1920,10 +1941,6 @@ footer .terminos-y-condiciones .modal-body {
    * Inicio de amistad.html
    *
   */
-  .body-desaphilip-amistad,
-.body-desaphilip-amistad-2 {
-    background-image: url("../src/assets/images/background/background-amistad-mobile.jpg");
-  }
 
   /*
    * Fin de amistad.html
@@ -1933,10 +1950,6 @@ footer .terminos-y-condiciones .modal-body {
    * Inicio de diversion.html
    *
   */
-  .body-desaphilip-diversion,
-.body-desaphilip-diversion-2 {
-    background-image: url("../src/assets/images/background/background-diversion-mobile.jpg");
-  }
 
   /*
    * Inicio de diversion.html
@@ -1946,10 +1959,6 @@ footer .terminos-y-condiciones .modal-body {
    * Inicio de autenticidad.html
    *
   */
-  .body-desaphilip-autenticidad,
-.body-desaphilip-autenticidad-2 {
-    background-image: url("../src/assets/images/background/background-autenticidad-mobile.jpg");
-  }
 
   /*
    * Fin de autenticidad.html
@@ -1959,14 +1968,50 @@ footer .terminos-y-condiciones .modal-body {
    * Inicio de galeria_de_stickers.html
    *
   */
-  .body-galeria-de-stickers .galeria-de-stickers .carrousel-de-sticker {
-    width: 100%;
-  }
 
   /*
    * Fin de galeria_de_stickers.html
    *
   */
+}
+@media only screen and (max-width: 360px) and (max-width: 767px) {
+  .body-desaphilip-musica .respuesta {
+    width: 20em;
+  }
+  .body-desaphilip-musica .respuesta .respuesta-content {
+    width: 20em;
+  }
+}
+@media only screen and (max-width: 360px) and (max-width: 768px) {
+  .body-desaphilip-musica .respuesta {
+    width: 20em;
+  }
+  .body-desaphilip-musica .respuesta .respuesta-content {
+    width: 20em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .body-desaphilip-amistad,
+.body-desaphilip-amistad-2 {
+    background-image: url("../src/assets/images/background/background-amistad-mobile.jpg");
+  }
+}
+@media only screen and (max-width: 360px) {
+  .body-desaphilip-diversion,
+.body-desaphilip-diversion-2 {
+    background-image: url("../src/assets/images/background/background-diversion-mobile.jpg");
+  }
+}
+@media only screen and (max-width: 360px) {
+  .body-desaphilip-autenticidad,
+.body-desaphilip-autenticidad-2 {
+    background-image: url("../src/assets/images/background/background-autenticidad-mobile.jpg");
+  }
+}
+@media only screen and (max-width: 360px) {
+  .body-galeria-de-stickers .galeria-de-stickers .carrousel-de-sticker {
+    width: 100%;
+  }
 }
 /* Tablet Styles */
 @media only screen and (min-width: 361px) and (max-width: 1060px) {
@@ -2402,6 +2447,14 @@ footer .terminos-y-condiciones .modal-body {
   .body-desaphilip-musica,
 .body-desaphilip-musica-2 {
     background-image: url("../src/assets/images/background/background-musica-mobile.jpg");
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 1060px) {
+  .body-desaphilip-musica .respuesta {
+    width: 20em;
+  }
+  .body-desaphilip-musica .respuesta .respuesta-content {
+    width: 20em;
   }
 }
 @media only screen and (min-width: 361px) and (max-width: 1060px) {

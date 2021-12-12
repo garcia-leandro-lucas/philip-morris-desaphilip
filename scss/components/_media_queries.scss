@@ -380,17 +380,29 @@
     .body-desaphilip-musica-2 {
         background-image: url('../src/assets/images/background/background-musica-mobile.jpg');
 
-        .respuesta {
-            width: 100%;
+    }
+
+    .body-desaphilip-musica {
+        @include break-point-tablet(tablet-b){
+            .respuesta {
+                width: 20em;
 
             .respuesta-content {
-                width: 90%;                
+                width: 20em;                
+                }
             }
         }
 
+        @include break-point-tablet(tablet-c){
+            .respuesta {
+                width: 20em;
+
+            .respuesta-content {
+                width: 20em;                
+                }
+            }
+        }
     }
-
-
 
     /*
      * Fin de musica.html
@@ -755,6 +767,16 @@
     .body-desaphilip-musica,
     .body-desaphilip-musica-2 {
         background-image: url('../src/assets/images/background/background-musica-mobile.jpg');
+    }
+
+    .body-desaphilip-musica {
+        .respuesta {
+            width: 20em;
+
+            .respuesta-content {
+                width: 20em;                
+            }
+        }
     }
 
     /*

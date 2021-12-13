@@ -310,6 +310,10 @@ li {
     border: 1px solid var(--color-amarillo);
 }
 
+.border-gris-bajo {
+    border: 1px solid var(--color-gris-bajo);
+}
+
 .border-azul {
     border: 1px solid var(--color-azul);
 }
@@ -344,6 +348,10 @@ li {
     /* 0/16 */
     /* 10/16 */
     /* 10/16 */
+}
+
+.border-radius-10 {
+    border-radius: 0.625em; /* 10/16 */
 }
 
 .mayusculas {
@@ -907,6 +915,79 @@ footer {
 
 .body-desaphilip {
     @extend %bg-image;
+
+    .desaphilip {
+        .content-editor-sticker {
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 300px;
+            grid-template-columns: 300px 50px 300px;
+            margin-bottom: 30px;
+
+            .content-editor {
+                
+            }
+
+            .content-herramientas {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin: 0 auto;
+
+                object {
+                    width: 1.5em;
+                    margin: 12px;
+                }
+
+                hr {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+
+                .herramienta {
+                    padding: 10px 0px;
+
+                    &:hover {
+                        background-color: var(--color-gris-medio);
+                        transition: all 0.5s;
+                    }
+                }
+            }
+
+            .content-sticker {
+                canvas {
+                    background-image: url('../src/assets/images/background/background-canvas.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .content-images {
+                    display: grid;
+
+                .subir-tu-foto {
+                    display: grid;
+                    grid-template-rows: repeat(3, 80px);
+                    grid-template-columns: repeat(3, 80px);
+                    gap: 15px;
+                    margin: 10px;
+                    justify-content: center;
+                    align-content: center;
+
+                    .boton-subi-tu-foto {
+                        border: 2px dashed var(--color-negro);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        align-content: center;
+                        align-items: center;
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 /*

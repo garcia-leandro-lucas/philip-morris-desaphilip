@@ -99,8 +99,8 @@
 
     <main class="desaphilip">
         <section class="desaphilip-amistad">
-            <h1 class="texto-fucsia texto-ombudsman texto-center fuente-heredada texto-titular-desaphilip-3-6 fuente-heredada interletrado-005 interlineado-09 desaphilip-titulo-principal">Desaphilip Amistad</h1>
-            <p class="texto-blanco texto-fave texto-center texto-bajada-desaphilip-3 fuente-heredada interletrado-005 interlineado-09 desaphilip-bajada">Te bancan siempre y l@s volverías a elegir una y otra vez, <br>como a tus Philip, lo sabemos porque estuvimos en cada encuentro de amig@s.</p>
+            <h1 class="texto-fucsia texto-ombudsman texto-center fuente-heredada texto-titular-desaphilip-3-6 fuente-heredada interletrado-005 interlineado-09 desaphilip-titulo-principal" data-aos="fade-up" data-aos-duration="1000">Desaphilip Amistad</h1>
+            <p class="texto-blanco texto-fave texto-center texto-bajada-desaphilip-3 fuente-heredada interletrado-005 interlineado-09 desaphilip-bajada" data-aos="fade-up" data-aos-duration="1000">Te bancan siempre y l@s volverías a elegir una y otra vez, <br>como a tus Philip, lo sabemos porque estuvimos en cada encuentro de amig@s.</p>
 
             <div class="tab-desafio-content margin-t-30 texto-center border-fucsia background-negro">
                 <ul class="tab-desafio">
@@ -110,39 +110,80 @@
             </div>
 
             <!-- Editor para generar sticker con relación a la amistad -->
-            <div class="content-editor-sticker">
-                <div class="content-sticker">
-                    <img src="http://via.placeholder.com/50?text=Sticker+armado" alt="Icono más">
-                </div>
-                <div class="content-herramientas">
-                    <!-- Acá van las herramientas de edición. Herramienta mover, herramienta recortar, herramienta de texto, herramienta pincel -->
-                </div>
-                <div class="content-images">
-                    <div class="subir-tu-foto">
-                        <img src="http://via.placeholder.com/10" alt="Icono más">
-                        <p>Subí tu foto</p>
+                <div class="content-editor-sticker" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="content-editor content-sticker">
+                        <canvas id="stickers" width="300" height="300">
+                        
+                        </canvas>
+                    </div>
+                    <div class="content-editor content-herramientas background-blanco border-gris-bajo">
+                        <div class="herramienta">
+                            <object type="image/svg+xml" data="../../src/assets/images/iconos/icon_cursor.svg"></object>
+                        </div>
+                        <hr>
+                        <div class="herramienta">
+                            <object type="image/svg+xml" data="../../src/assets/images/iconos/icon_recortar.svg"></object>
+                        </div>
+                        <hr>
+                        <div class="herramienta">
+                            <object type="image/svg+xml" data="../../src/assets/images/iconos/icon_texto.svg"></object>
+                        </div>
+                        <hr>
+                        <div class="herramienta">
+                            <object type="image/svg+xml" data="../../src/assets/images/iconos/icon_pincel.svg"></object>
+                        </div>
+                    </div>
+                    <div class="content-editor content-images background-gris-bajo">
+                        <div class="subir-tu-foto">
+                            <div class="boton-subi-tu-foto border-radius-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                </svg>
+                                <p class="texto-fave texto-negro">Subí tu foto</p>
+                            </div>
+                            <div class="sticker-imagen">
+                                <img src="../../src/assets/images/stickers/sticker_a.jpg" loading="lazy" class="imagen-responsive">
+                            </div>
+                            <div class="sticker-imagen">
+                                <img src="../../src/assets/images/stickers/sticker_b.jpg" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
+                            </div>
+                            <div class="sticker-imagen">
+                                <img src="../../src/assets/images/stickers/sticker_c.jpg" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
+                            </div>
+                            <div class="sticker-imagen">
+                                <img src="../../src/assets/images/stickers/sticker_d.jpg" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
+                            </div>
+                            <div class="sticker-imagen">
+                                <img src="../../src/assets/images/stickers/sticker_e.jpg" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
+                            </div>
+                            <div class="sticker-imagen">
+                                <img src="../../src/assets/images/stickers/sticker_f.jpg" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
+                            </div>
+                            <div class="sticker-imagen">
+                                <img src="../../src/assets/images/stickers/sticker_g.jpg" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
+                            </div>
+                            <div class="sticker-imagen">
+                                <img src="../../src/assets/images/stickers/sticker_h.jpg" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <a href="">
+                    <div class="btn-continue-end background-transparente texto-center border-blanco">
+                        <p class="mayusculas texto-roboto-r">Finalizar</p>
+                    </div>
+                </a>
+                <!-- Fin de editor para generar sticker con relación a la amistad -->
 
-            <a href="">
-                <div class="btn-continue-end background-transparente texto-center border-blanco">
-                    <p class="mayusculas texto-roboto-r">Finalizar</p>
-                </div>
-            </a>
-            <!-- Fin de editor para generar sticker con relación a la amistad -->
-
-            <!-- Pop up al presionar finalizar -->
-
-            <div class="alto-sticker">
-                <h2 class="text-negro">¡Alto sticker!</h2>
-                <p class="texto-rojo">Al toque pase la moderación, lo encontás en la galeria <br>y un jurado va a elegir los ganadores.</p>
-                <img src="http://via.placeholder.com/50?text=Sticker+armado" alt="Sticker creado por el participante">
-                <a href="" class="texto-blanco">Descargar Sticker</a>
-                <a href="galeria_de_stickers.html" class="texto-blanco">Ir a galería</a>
-            </div>
-
-            <!-- Fin Pop up al presionar finalizar -->
+                <!-- Pop up al presionar finalizar -->
+                <!-- <div class="alto-sticker">
+                    <h2 class="text-negro">¡Alto sticker!</h2>
+                    <p class="texto-rojo">Al toque pase la moderación, lo encontás en la galeria <br>y un jurado va a elegir los ganadores.</p>
+                    <img src="http://via.placeholder.com/50?text=Sticker+armado" alt="Sticker creado por el participante">
+                    <a href="" class="texto-blanco">Descargar Sticker</a>
+                    <a href="galeria_de_stickers.html" class="texto-blanco">Ir a galería</a>
+                </div> -->
+                <!-- Fin Pop up al presionar finalizar -->
         </section>    
     </main>
 

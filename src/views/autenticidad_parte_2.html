@@ -36,67 +36,76 @@
 <body class="body-desaphilip body-desaphilip-autenticidad-2">
 
     <header>
-        <nav class="menu-principal navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="logo navbar-brand">
-                    <a href="../../index.html">
-                        <picture>
-                            <source srcset="../../src/assets/images/logo/logo_philip_morris.webp" type="image/webp">
-                            <img src="../../src/assets/images/logo/logo_philip_morris.png" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
-                        </picture>
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a aria-current="page" href="#">Lanzamientos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../index.html#novedades">Novedades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../index.html#productos">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../index.html#contacto">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../index.html#nuestas_marcas">Nuestras marcas</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Tienda Online
+            <nav class="menu-principal texto-roboto-r">
+                <div class="container">
+                    <div class="nav-bar">
+                        <div class="logo">
+                            <a href="index.html">
+                                <picture>
+                                    <source srcset="../../src/assets/images/logo/logo_philip_morris.webp" type="image/webp">
+                                    <img src="src/assets/images/logo/logo_philip_morris.png" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
+                                </picture>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="https://cigarrillosonline.com/" target="_blank">Todos</a></li>
-                                <li><a class="dropdown-item" href="https://cigarrillosonline.com/" target="_blank">Packs</a></li>
-                                <li><a class="dropdown-item" href="https://cigarrillosonline.com/" target="_blank">Combos</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="star-puntos">
-                        <div class="star-puntos-icon">
-                            <i class="fas fa-star"></i>
                         </div>
-                        <div class="star-puntos-number">
-                            <p class="text-roboto-b margin-b-0">100</p>
+                        <div class="menu-burger">
+                            <i class="fas fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
                         </div>
                     </div>
-                    <div class="login">
-                        <div class="login-nombre">
-                            <p class="text-roboto-b margin-b-0">Leandro</p>
+                    <div class="offcanvas offcanvas-end background-negro" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <picture>
+                                        <source srcset="../../src/assets/images/logo/logo_philip_morris.webp" type="image/webp">
+                                        <img src="src/assets/images/logo/logo_philip_morris.png" alt="Logo Philip Morris" loading="lazy" class="imagen-responsive">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="button-close">
+                                <i class="fas fa-times" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                            </div>
                         </div>
-                        <div class="login-avatar">
-                            <i class="far fa-user-circle"></i>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <a href="../../index.html#lanzamientos">Lanzamientos</a>
+                                </li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <a href="../../index.html#novedades">Novedades</a>
+                                </li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <a href="../../index.html#productos">Productos</a>
+                                </li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <a href="../../index.html#contacto">Contacto</a>
+                                </li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <a href="../../index.html#nuestasMarcas">Nuestras marcas</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                                        Tienda Online
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="https://cigarrillosonline.com/" target="_blank">Todos</a></li>
+                                        <li><a class="dropdown-item" href="https://cigarrillosonline.com/" target="_blank">Packs</a></li>
+                                        <li><a class="dropdown-item" href="https://cigarrillosonline.com/" target="_blank">Combos</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="login">
+                                <div class="login-avatar">
+                                    <i class="far fa-user-circle"></i>
+                                </div>
+                                <div class="login-nombre">
+                                    <p class="texto-roboto-r margin-b-0">Leandro</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
     <main class="desaphilip">
         <section class="desaphilip-autenticidad">

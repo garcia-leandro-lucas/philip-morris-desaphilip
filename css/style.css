@@ -594,11 +594,23 @@ nav .star-puntos .star-puntos-icon i {
 }
 
 .menu-principal {
-  display: flex;
-  padding: 0.625em;
+  padding: 1.5em;
+  /* 30/16 */
   align-items: center;
   background-color: var(--color-gris-opacidad);
   color: #ffffff;
+}
+.menu-principal .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-principal .offcanvas-header {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.menu-principal .offcanvas-header i {
+  font-size: 30px;
 }
 .menu-principal a {
   color: #ffffff;
@@ -609,10 +621,19 @@ nav .star-puntos .star-puntos-icon i {
 }
 .menu-principal .login {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 8em;
   align-items: center;
   margin: 1.25em;
+}
+.menu-principal .login i {
+  font-size: 30px;
+}
+.menu-principal .login .login-nombre {
+  margin-left: 20px;
+}
+.menu-principal .login .login-nombre p {
+  font-size: 18px;
 }
 .menu-principal .star-puntos {
   display: flex;
@@ -623,9 +644,6 @@ nav .star-puntos .star-puntos-icon i {
 }
 .menu-principal .navbar-toggler:focus {
   box-shadow: none;
-}
-.menu-principal .dropdown-menu {
-  width: 13rem;
 }
 .menu-principal .fas.fa-bars {
   color: #fff;
@@ -649,10 +667,18 @@ nav .star-puntos .star-puntos-icon i {
 }
 
 .menu-principal ul li:hover ul {
-  width: 13rem;
   background-color: var(--color-gris-opacidad);
-  display: block;
+  display: flex;
   transition: all 0.5s;
+  flex-direction: column;
+}
+.menu-principal ul li:hover ul li {
+  margin: 0px;
+}
+.menu-principal ul li:hover ul li a {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 15px;
 }
 
 .btn-comprar {

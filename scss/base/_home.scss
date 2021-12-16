@@ -90,9 +90,6 @@
     }
 
     /*  Iluminacion neon */
-    /* .body-desaphilip-home .musica {
-        box-shadow: inset 0em 0em 2em 0.3em var(--color-rojo) , 0em 0em 2em 0.3em var(--color-rojo);
-    } */
     .musica {
         box-shadow: inset 0em 0em 2em 0.3em var(--color-rojo), inset 0em 0em 1em 0.2em var(--color-rojo), inset 0em 0em 0.5em 0.1em var(--color-rojo), 0em 0em 2em 0.3em var(--color-rojo), 0em 0em 1em 0.2em var(--color-rojo), 0em 0em 0.5em 0.1em var(--color-rojo);
         animation: neon-musica 1.5s infinite alternate;
@@ -115,8 +112,6 @@
           box-shadow: none;
         }    
     }
-
-
 
     .amistad {
         box-shadow: inset 0em 0em 2em 0.3em var(--color-fucsia), 0em 0em 2em 0.3em var(--color-fucsia);

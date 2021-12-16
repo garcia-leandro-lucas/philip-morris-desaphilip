@@ -125,12 +125,6 @@ $grid-breakpoints: (
     }
 }
 
-// @mixin break-point-tablet($breakpoints) {
-//     @media screen and (max-width: map-get($grid-breakpoints, $breakpoints)){ 
-//         @content;
-//     }
-// }
-
 $colores:
     #ffffff, /* 1 */
     #000000; /* 2 */

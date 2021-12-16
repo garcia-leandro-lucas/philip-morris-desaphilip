@@ -1,5 +1,3 @@
-// @import '../components/root';
-
 /*
  * Inicio de musica.html
  *
@@ -14,13 +12,11 @@
 .body-desaphilip-musica {
 
     .respuesta {
-        // @include sizes-w(30%);
         @include sizes-w(34.0625em); /* 545/16 */
         @include margin(1.25em auto); /* 20/16 */
     }
 
     .respuesta-content {
-        //@include sizes-w(70%);
         @include sizes-w(23.75em); /* 380/16 */
         @include margin(auto);
     }
@@ -41,7 +37,7 @@
         .respuesta-icono {
             position: absolute;
             right: 11px;
-            top: 5px;
+            top: 3px;
             font-size: 1.5em;
         }
     }

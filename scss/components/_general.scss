@@ -1,5 +1,3 @@
-// @import 'root';
-
 /*
 * Inicio Generales
 *
@@ -74,8 +72,16 @@ li {
     @include sizes-w(12em);
 }
 
+.ancho-8 {
+    @include sizes-w(8em);   
+}
+
 .ancho-cont {
     @include sizes-w(80%);
+}
+
+.alto-3 {
+    height: 3em; /* 48/16 */
 }
 
 .margin-auto {
@@ -561,7 +567,6 @@ nav {
     }
 
     .dropdown-menu {
-        // @include sizes-w(13rem);
     }
 
     .fas.fa-bars {
@@ -591,7 +596,6 @@ nav {
 }
 
 .menu-principal ul li:hover ul {
-    // @include sizes-w(13rem);
     background-color: var(--color-gris-opacidad);
     display: flex;
     transition: all 0.5s;
@@ -801,12 +805,6 @@ footer {
 
 }
 
-
-
-
-
-
-
 .btn-footer {
     @include sizes-w(14em);
     display: flex;
@@ -836,6 +834,10 @@ footer {
         img {
             padding: 0.1875em;
             /* 3/16 */
+        }
+
+        object {
+            width: 2em;
         }
     }
 }

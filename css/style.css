@@ -179,8 +179,17 @@ li {
   width: 12em;
 }
 
+.ancho-8 {
+  width: 8em;
+}
+
 .ancho-cont {
   width: 80%;
+}
+
+.alto-3 {
+  height: 3em;
+  /* 48/16 */
 }
 
 .margin-auto {
@@ -863,6 +872,9 @@ footer .terminos-y-condiciones .modal-body {
   padding: 0.1875em;
   /* 3/16 */
 }
+.btn-footer .btn-footer-icono object {
+  width: 2em;
+}
 
 .link-ver-terminos p {
   font-size: 12px;
@@ -1271,9 +1283,6 @@ footer .terminos-y-condiciones .modal-body {
 
 .body-desaphilip-home {
   /*  Iluminacion neon */
-  /* .body-desaphilip-home .musica {
-      box-shadow: inset 0em 0em 2em 0.3em var(--color-rojo) , 0em 0em 2em 0.3em var(--color-rojo);
-  } */
 }
 .body-desaphilip-home .instrucciones-desktop {
   display: flex;
@@ -1472,7 +1481,7 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-musica .respuesta-content .respuesta-icono {
   position: absolute;
   right: 11px;
-  top: 5px;
+  top: 3px;
   font-size: 1.5em;
 }
 
@@ -2113,6 +2122,9 @@ footer .terminos-y-condiciones .modal-body {
   .body-desaphilip-home .desaphilip-item .desaphilip-text h2 {
     font-size: 2em;
   }
+  .body-desaphilip-home footer .footer-content .btn-footer-icono object {
+    width: 1.6em;
+  }
 
   /*
    * Inicio de home.html
@@ -2344,6 +2356,14 @@ footer .terminos-y-condiciones .modal-body {
 .body-desaphilip-autenticidad-2 footer .footer-content .btn-footer .btn-footer-icono img {
     width: 1.5em;
     padding: 0.1em;
+  }
+  .body-desaphilip footer .footer-content .btn-footer .btn-footer-icono object, .body-desaphilip-home footer .footer-content .btn-footer .btn-footer-icono object,
+.body-galeria-de-stickers footer .footer-content .btn-footer .btn-footer-icono object, .body-desaphilip-musica footer .footer-content .btn-footer .btn-footer-icono object,
+.body-desaphilip-musica-2 footer .footer-content .btn-footer .btn-footer-icono object, .body-desaphilip-amistad footer .footer-content .btn-footer .btn-footer-icono object,
+.body-desaphilip-amistad-2 footer .footer-content .btn-footer .btn-footer-icono object, .body-desaphilip-diversion footer .footer-content .btn-footer .btn-footer-icono object,
+.body-desaphilip-diversion-2 footer .footer-content .btn-footer .btn-footer-icono object, .body-desaphilip-autenticidad footer .footer-content .btn-footer .btn-footer-icono object,
+.body-desaphilip-autenticidad-2 footer .footer-content .btn-footer .btn-footer-icono object {
+    width: 1.6em;
   }
   .body-desaphilip footer .footer-content .icono-sombrerero, .body-desaphilip-home footer .footer-content .icono-sombrerero,
 .body-galeria-de-stickers footer .footer-content .icono-sombrerero, .body-desaphilip-musica footer .footer-content .icono-sombrerero,

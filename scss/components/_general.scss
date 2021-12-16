@@ -34,7 +34,7 @@ li {
 }
 
 .section-content {
-    @include sizes-w(80%);
+    @include sizes-w(100%);
     margin: auto;
 }
 
@@ -497,8 +497,7 @@ nav {
 }
 
 .menu-principal {
-    // display: flex;
-    padding: 1.5em; /* 30/16 */
+    padding: 0.5em 2em;
     align-items: center;
     background-color: var(--color-gris-opacidad);
     color: nth($colores, 1);

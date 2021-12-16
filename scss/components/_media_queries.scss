@@ -318,6 +318,9 @@
         }
 
         #productos {
+            h1 {
+                text-align: center;
+            }
             .ver-productos {
                 width: 12.5em; /* 200/16 */
             }
@@ -326,9 +329,23 @@
         #contacto {
             background-color: var(--color-gris-opacidad);
             background-image: url('../src/assets/images/background/background-general-mobile.jpg');
+            
+            .section-content {
+                .contacto-text {
+                    h3 {
+                        text-align: center;    
+                    }
+
+                    p {
+                     text-align: center;       
+                    }
+                    
+                }
+            }
 
             .form-contact {
-                @include sizes-w(100%);
+                @include sizes-w(90%);
+                margin: auto;
             }
         }
 

@@ -139,7 +139,7 @@ li {
 }
 
 .section-content {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -594,8 +594,7 @@ nav .star-puntos .star-puntos-icon i {
 }
 
 .menu-principal {
-  padding: 1.5em;
-  /* 30/16 */
+  padding: 0.5em 2em;
   align-items: center;
   background-color: var(--color-gris-opacidad);
   color: #ffffff;
@@ -2044,6 +2043,9 @@ footer .terminos-y-condiciones .modal-body {
   .body-index section {
     text-align: center;
   }
+  .body-index #productos h1 {
+    text-align: center;
+  }
   .body-index #productos .ver-productos {
     width: 12.5em;
     /* 200/16 */
@@ -2052,8 +2054,15 @@ footer .terminos-y-condiciones .modal-body {
     background-color: var(--color-gris-opacidad);
     background-image: url("../src/assets/images/background/background-general-mobile.jpg");
   }
+  .body-index #contacto .section-content .contacto-text h3 {
+    text-align: center;
+  }
+  .body-index #contacto .section-content .contacto-text p {
+    text-align: center;
+  }
   .body-index #contacto .form-contact {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   .body-index footer nav ul {
     display: flex;

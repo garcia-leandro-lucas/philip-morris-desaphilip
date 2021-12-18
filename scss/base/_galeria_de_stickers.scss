@@ -5,11 +5,12 @@
 
 .body-galeria-de-stickers {
     .carrousel-de-sticker {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+        justify-items: center;
         @include sizes-w(50%);
-        @include margin(auto);
 
         .sticker {
             display: flex;
@@ -27,6 +28,32 @@
 
     .btn-descargar {
         @include btn-descargar(8em, 0.625em, flex, center, 6.25em); /* 10/16 */ /* 100/16 */
+    }
+
+    .controles-carrousel {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 30em;
+        margin: 30px auto;
+
+        .controles-flecha-left, .controles-flecha-right {
+            display: flex;
+            justify-content: space-evenly;
+            width: 10em;
+
+            img {
+                width: 2em;
+            }
+        }
+    }
+
+    .crear-stikers{
+        margin: auto;
+        width: 20em;
+        text-align: center;
+        padding: 10px;
+        border-radius: 100px;
     }
 }
 
